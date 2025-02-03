@@ -391,5 +391,5 @@ position = Vector2(69, -33)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_efx2j")]
+[node name="Enemy2" parent="." instance=ExtResource("3_efx2j")]
 position = Vector2(99, -35)

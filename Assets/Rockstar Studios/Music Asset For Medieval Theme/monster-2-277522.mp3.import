@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs0yt0xgdx1a2"
+path="res://.godot/imported/monster-2-277522.mp3-72a91e25d33dbcd7967bd165eed52ec5.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3"
+dest_files=["res://.godot/imported/monster-2-277522.mp3-72a91e25d33dbcd7967bd165eed52ec5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsr2h48crm00o"
+path="res://.godot/imported/body-falling-to-ground-100474.mp3-3924716e7a2a67cc2ac83021fbfe836b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/body-falling-to-ground-100474.mp3"
+dest_files=["res://.godot/imported/body-falling-to-ground-100474.mp3-3924716e7a2a67cc2ac83021fbfe836b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6m2vbg6g5h7b"
+path="res://.godot/imported/bow-loading-38752.mp3-06027648c8618fef700f119b5fa3d7c2.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow-loading-38752.mp3"
+dest_files=["res://.godot/imported/bow-loading-38752.mp3-06027648c8618fef700f119b5fa3d7c2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

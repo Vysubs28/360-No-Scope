@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbcf0n81htyns"
+path="res://.godot/imported/game-over-classic-206486.mp3-10b98baed727546f3255f94e4686691d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/game-over-classic-206486.mp3"
+dest_files=["res://.godot/imported/game-over-classic-206486.mp3-10b98baed727546f3255f94e4686691d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
