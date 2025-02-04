@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2xbmphc5h1eq"
+path="res://.godot/imported/walking-sound-effect-272246.mp3-20302f0729c261e1800c3b3f4da21db9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/walking-sound-effect-272246.mp3"
+dest_files=["res://.godot/imported/walking-sound-effect-272246.mp3-20302f0729c261e1800c3b3f4da21db9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
