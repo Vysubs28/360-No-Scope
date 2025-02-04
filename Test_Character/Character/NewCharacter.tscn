@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://bp123p4v3j18m"]
 
-[ext_resource type="Script" path="res://Character/Movement.gd" id="1_j8ykc"]
-[ext_resource type="Texture2D" uid="uid://co4wnkchv2g44" path="res://Assets/Rockstar Studios/New Character Design/New Sprite Sheet.png" id="2_ohuvv"]
+[ext_resource type="Script" path="res://Test_Character/Character/Movement.gd" id="1_j8ykc"]
+[ext_resource type="Texture2D" uid="uid://mgyf12f2omfn" path="res://Assets/Rockstar Studios/New Character Design/New Sprite Sheet.png" id="2_ohuvv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s4kkk"]
 atlas = ExtResource("2_ohuvv")
