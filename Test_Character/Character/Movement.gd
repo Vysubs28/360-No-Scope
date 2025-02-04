@@ -12,6 +12,7 @@ var animation_locked : bool = false
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
 
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -46,6 +47,9 @@ func update_animation():
 			animated_sprite.play("run")
 		else:
 			animated_sprite.play("idle")
+		if not is_on_floor():
+			animated_sprite.play("fall _spin")
+			animation_locked = true
 			
 func spin():
 	velocity.y = jump_velocity
@@ -56,8 +60,11 @@ func land():
 	animated_sprite.play("jump_end")
 	animation_locked = true
 
-
 func _on_animated_sprite_2d_animation_finished():
 	if(animated_sprite.animation == "jump_end"):
 		animation_locked = false
 		
+
+func _on_hitbox_body_entered(body):
+	if body.is_in_group("Enemy"):
+		animated_sprite.play("death")
