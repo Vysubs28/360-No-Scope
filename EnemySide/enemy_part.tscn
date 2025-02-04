@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxe0okni3vntp"]
+[gd_scene load_steps=7 format=3 uid="uid://cxe0okni3vntp"]
 
 [ext_resource type="Texture2D" uid="uid://c0eyk1iwxpywp" path="res://Assets/Rockstar Studios/Tileset/Tileset_details.png" id="1_qu5o1"]
 [ext_resource type="PackedScene" uid="uid://b4o54sqgr01ig" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="2_df47y"]
 [ext_resource type="PackedScene" uid="uid://1to61y0lq6vm" path="res://Assets/Rockstar Studios/Enemies/enemy2.tscn" id="3_efx2j"]
+[ext_resource type="PackedScene" uid="uid://cnmxs8w75bjv1" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="4_ex2uc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p5n7y"]
 texture = ExtResource("1_qu5o1")
@@ -393,3 +394,5 @@ position = Vector2(69, -33)
 
 [node name="Enemy2" parent="." instance=ExtResource("3_efx2j")]
 position = Vector2(99, -35)
+
+[node name="Trap1" parent="." instance=ExtResource("4_ex2uc")]
