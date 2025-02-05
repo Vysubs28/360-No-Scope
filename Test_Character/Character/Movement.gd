@@ -37,13 +37,13 @@ func _physics_process(delta):
 			can_shoot = false
 			$CooldownTimer.start()
 
-		# Get the input direction and handle the movement/deceleration.
-		# As good practice, you should replace UI actions with custom gameplay actions.
-		direction = Input.get_vector("left", "right", "up", "down")
-		if direction:
-			velocity.x = direction.x * speed
-		else:
-			velocity.x = move_toward(velocity.x, 0, speed)
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	direction = Input.get_vector("left", "right", "ui_up", "ui_down")
+	if direction:
+		velocity.x = direction.x * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
 	update_animation()
@@ -65,11 +65,11 @@ func spin():
 	animation_locked = true
 	
 func land():
-	animated_sprite.play("jump_end")
-	animation_locked = true
+	animated_sprite.play("isle")
+	animation_locked = false
 
 func _on_animated_sprite_2d_animation_finished():
-	if(animated_sprite.animation == "jump_end"):
+	if(animated_sprite.animation == "isle"):
 		animation_locked = false
 		
 
