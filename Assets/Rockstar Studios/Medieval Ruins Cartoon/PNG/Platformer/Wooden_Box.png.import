@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://c1khxhqyw36pv"
+=======
+uid="uid://ckl7oxhnox0gl"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Wooden_Box.png-235233caaf19d634cc3ca9014e2cae1b.ctex"
 metadata={
 "vram_texture": false

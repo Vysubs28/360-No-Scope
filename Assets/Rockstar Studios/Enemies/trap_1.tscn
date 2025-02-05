@@ -1,7 +1,13 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=9 format=3 uid="uid://4pwgg6o8o7u0"]
 
 [ext_resource type="Script" path="res://Assets/Rockstar Studios/Enemies/trap_1.gd" id="1_16qwq"]
 [ext_resource type="Texture2D" uid="uid://4howlje0pdod" path="res://Assets/Rockstar Studios/Traps/Trap5.png" id="1_r14xe"]
+=======
+[gd_scene load_steps=8 format=3 uid="uid://cnmxs8w75bjv1"]
+
+[ext_resource type="Texture2D" uid="uid://3hncub8qw7ig" path="res://Assets/Rockstar Studios/Traps/Trap5.png" id="1_r14xe"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aivev"]
 atlas = ExtResource("1_r14xe")
@@ -43,9 +49,12 @@ animations = [{
 size = Vector2(43, 43)
 
 [node name="trap_1" type="Area2D"]
+<<<<<<< Updated upstream
 collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_16qwq")
+=======
+>>>>>>> Stashed changes
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qbmce")
@@ -55,5 +64,8 @@ frame_progress = 0.902988
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 1.5)
 shape = SubResource("RectangleShape2D_4uyvv")
+<<<<<<< Updated upstream
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+=======
+>>>>>>> Stashed changes

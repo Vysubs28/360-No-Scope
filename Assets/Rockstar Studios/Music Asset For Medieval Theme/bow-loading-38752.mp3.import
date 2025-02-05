@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
 uid="uid://s0wwboqev0vj"
+=======
+uid="uid://b6m2vbg6g5h7b"
+>>>>>>> 258d54bd1865c9326d79ff71935b2c8e49197b5c
 path="res://.godot/imported/bow-loading-38752.mp3-06027648c8618fef700f119b5fa3d7c2.mp3str"
 
 [deps]

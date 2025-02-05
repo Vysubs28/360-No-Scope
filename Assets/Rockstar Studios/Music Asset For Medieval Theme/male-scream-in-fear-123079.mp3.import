@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
 uid="uid://cjej5otqoukq2"
+=======
+uid="uid://cjoxqib5pps0a"
+>>>>>>> 258d54bd1865c9326d79ff71935b2c8e49197b5c
 path="res://.godot/imported/male-scream-in-fear-123079.mp3-0c426f521bb187ab8ba1feffcc7f0f94.mp3str"
 
 [deps]

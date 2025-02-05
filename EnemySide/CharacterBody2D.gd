@@ -1,7 +1,13 @@
 extends CharacterBody2D
 
 
+<<<<<<< Updated upstream
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
+=======
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+>>>>>>> Stashed changes
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -27,6 +33,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	
+<<<<<<< Updated upstream
 
 
 func _on_hitbox_area_entered(area):
@@ -35,3 +42,5 @@ func _on_hitbox_area_entered(area):
 	animated_sprite.play("death")
 	await animated_sprite.animation_finished
 	queue_free()
+=======
+>>>>>>> Stashed changes

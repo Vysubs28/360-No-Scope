@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
 uid="uid://dy0l32gylh6n3"
+=======
+uid="uid://cbatsf6j62j88"
+>>>>>>> 258d54bd1865c9326d79ff71935b2c8e49197b5c
 path="res://.godot/imported/failure-1-89170.mp3-43af810dee7fd1fb35872424b9ab5f3f.mp3str"
 
 [deps]

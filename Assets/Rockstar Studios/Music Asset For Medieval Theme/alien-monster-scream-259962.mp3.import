@@ -2,7 +2,15 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< Updated upstream
 uid="uid://be0q3dukfe7o7"
+=======
+<<<<<<< HEAD
+uid="uid://ksfjp6vmu282"
+=======
+uid="uid://be0q3dukfe7o7"
+>>>>>>> 258d54bd1865c9326d79ff71935b2c8e49197b5c
+>>>>>>> Stashed changes
 path="res://.godot/imported/alien-monster-scream-259962.mp3-ff460a96b283e2b216d3ff5b938181a0.mp3str"
 
 [deps]
