@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="360 No Scope"
-run/main_scene="res://EnemySide/enemy_part.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 

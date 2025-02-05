@@ -16,6 +16,7 @@ var dead : bool = false
 
 signal shoot(pos: Vector2)
 
+
 func _physics_process(delta):
 	if (not dead):# Add the gravity.
 		if not is_on_floor():
@@ -54,6 +55,9 @@ func update_animation():
 			animated_sprite.play("run")
 		else:
 			animated_sprite.play("idle")
+		if not is_on_floor():
+			animated_sprite.play("fall _spin")
+			animation_locked = true
 			
 func spin():
 	velocity.y = jump_velocity
@@ -63,7 +67,6 @@ func spin():
 func land():
 	animated_sprite.play("jump_end")
 	animation_locked = true
-
 
 func _on_animated_sprite_2d_animation_finished():
 	if(animated_sprite.animation == "jump_end"):
@@ -78,3 +81,6 @@ func killMC():
 	dead = true
 	velocity.y = 0
 	velocity.x = 0
+func _on_hitbox_body_entered(body):
+	if body.is_in_group("Enemy"):
+		animated_sprite.play("death")
