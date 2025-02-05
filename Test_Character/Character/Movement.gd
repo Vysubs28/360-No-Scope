@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 @export var speed : float =  200.0
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -300.0
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
 
@@ -31,7 +31,7 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	direction = Input.get_vector("left", "right", "up", "down")
+	direction = Input.get_vector("left", "right", "ui_up", "ui_down")
 	if direction:
 		velocity.x = direction.x * speed
 	else:
@@ -57,11 +57,11 @@ func spin():
 	animation_locked = true
 	
 func land():
-	animated_sprite.play("jump_end")
-	animation_locked = true
+	animated_sprite.play("isle")
+	animation_locked = false
 
 func _on_animated_sprite_2d_animation_finished():
-	if(animated_sprite.animation == "jump_end"):
+	if(animated_sprite.animation == "isle"):
 		animation_locked = false
 		
 
