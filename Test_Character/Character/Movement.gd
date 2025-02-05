@@ -11,31 +11,23 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var animation_locked : bool = false
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
-var can_shoot : bool = true
-var dead : bool = false
-
-signal shoot(pos: Vector2)
 
 
 func _physics_process(delta):
-	if (not dead):# Add the gravity.
-		if not is_on_floor():
-			velocity.y += gravity * delta
-			was_in_air = true
-		else: 
-			if was_in_air == true:
-				land()
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+		was_in_air = true
+	else: 
+		if was_in_air == true:
+			land()
+		
+		was_in_air = false
+	# Handle jump. # spin = jump
+	if Input.is_action_just_pressed("spin"): 
+		if is_on_floor():
+			spin()
 			
-			was_in_air = false
-		# Handle jump. # spin = jump
-		if Input.is_action_just_pressed("spin"): 
-			if is_on_floor():
-				spin()
-				
-		if Input.is_action_just_pressed("shoot") and can_shoot:
-			shoot.emit(global_position)
-			can_shoot = false
-			$CooldownTimer.start()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -73,14 +65,6 @@ func _on_animated_sprite_2d_animation_finished():
 		animation_locked = false
 		
 
-func _on_cooldown_timer_timeout():
-	can_shoot = true
-
-func killMC():
-	print('player died')
-	dead = true
-	velocity.y = 0
-	velocity.x = 0
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Enemy"):
 		animated_sprite.play("death")
