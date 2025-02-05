@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://ce1vjd2v2c4gn"
+=======
+uid="uid://bko7o7k3icp0t"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Lion_Bas_Relief.png-9d2257acd8992bb4cd03165454601929.ctex"
 metadata={
 "vram_texture": false

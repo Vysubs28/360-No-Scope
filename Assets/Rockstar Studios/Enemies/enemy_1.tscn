@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=16 format=3 uid="uid://cyibs22jky283"]
 
 [ext_resource type="Script" path="res://EnemySide/CharacterBody2D.gd" id="1_nv106"]
@@ -21,6 +22,8 @@ region = Rect2(96, 195, 48, 41)
 atlas = ExtResource("2_sjoq3")
 region = Rect2(144, 195, 48, 41)
 =======
+=======
+>>>>>>> Stashed changes
 [gd_scene load_steps=13 format=3 uid="uid://b4o54sqgr01ig"]
 
 [ext_resource type="Script" path="res://EnemySide/CharacterBody2D.gd" id="1_nv106"]
@@ -29,6 +32,9 @@ region = Rect2(144, 195, 48, 41)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ccyph"]
 atlas = ExtResource("2_sjoq3")
 region = Rect2(192, 195, 48, 41)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_okmwi"]
@@ -36,10 +42,13 @@ atlas = ExtResource("2_sjoq3")
 region = Rect2(240, 195, 48, 41)
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [sub_resource type="AtlasTexture" id="AtlasTexture_ccyph"]
 atlas = ExtResource("2_sjoq3")
 region = Rect2(192, 195, 48, 41)
 =======
+=======
+>>>>>>> Stashed changes
 [sub_resource type="AtlasTexture" id="AtlasTexture_3dm6f"]
 atlas = ExtResource("2_sjoq3")
 region = Rect2(144, 195, 48, 41)
@@ -55,6 +64,9 @@ region = Rect2(48, 195, 48, 41)
 [sub_resource type="AtlasTexture" id="AtlasTexture_a0a1r"]
 atlas = ExtResource("2_sjoq3")
 region = Rect2(0, 195, 48, 41)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pmeqi"]
@@ -74,6 +86,7 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "texture": SubResource("AtlasTexture_a0a1r")
 }, {
 "duration": 1.0,
@@ -87,14 +100,20 @@ animations = [{
 =======
 "texture": SubResource("AtlasTexture_ccyph")
 >>>>>>> Stashed changes
+=======
+"texture": SubResource("AtlasTexture_ccyph")
+>>>>>>> Stashed changes
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_okmwi")
 }, {
 "duration": 1.0,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "texture": SubResource("AtlasTexture_ccyph")
 =======
+=======
+>>>>>>> Stashed changes
 "texture": SubResource("AtlasTexture_3dm6f")
 }, {
 "duration": 1.0,
@@ -105,6 +124,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a0a1r")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }],
 "loop": false,
@@ -126,6 +148,7 @@ animations = [{
 "speed": 3.0
 }]
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3c0cc"]
 size = Vector2(59, 56)
@@ -164,6 +187,8 @@ shape = SubResource("RectangleShape2D_e3ibd")
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
 =======
+=======
+>>>>>>> Stashed changes
 [node name="Enemy1" type="CharacterBody2D"]
 script = ExtResource("1_nv106")
 
@@ -175,4 +200,7 @@ autoplay = "idle"
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-92, 48)
 polygon = PackedVector2Array(68, -36, 69, -33, 90, -33, 99, -42, 95, -60, 91, -64, 82, -64, 80, -55, 71, -46, 74, -44, 67, -39)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

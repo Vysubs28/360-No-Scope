@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://tqtlerc451wu"
+=======
+uid="uid://dxkl1j83cvv6o"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Coin_05.png-71f4764a672bda8ee0fd12f4c37dda6d.ctex"
 metadata={
 "vram_texture": false

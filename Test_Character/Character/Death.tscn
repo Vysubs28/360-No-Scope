@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://3vul6h572wsg"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://heeife44jabu"]
+>>>>>>> Stashed changes
 
 [ext_resource type="PackedScene" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="1_bs6o8"]
 [ext_resource type="Script" path="res://Test_Character/Character/Death.gd" id="2_jx3hd"]

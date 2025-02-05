@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="360 No Scope"
+<<<<<<< Updated upstream
 run/main_scene="res://Level/world.tscn"
+=======
+run/main_scene="res://EnemySide/enemy_part.tscn"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 

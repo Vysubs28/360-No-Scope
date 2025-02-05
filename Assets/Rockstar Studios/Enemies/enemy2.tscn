@@ -1,14 +1,20 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=18 format=3 uid="uid://c57wxvbnl81uj"]
 
 [ext_resource type="Script" path="res://EnemySide/CharacterBody2D.gd" id="1_tf60y"]
 [ext_resource type="Texture2D" uid="uid://lfnhhv2co56p" path="res://Assets/Rockstar Studios/Enemies/Alien2.png" id="2_rahty"]
 [ext_resource type="Script" path="res://Assets/Rockstar Studios/Enemies/enemy1_Hitbox.gd" id="3_5owuo"]
 =======
+=======
+>>>>>>> Stashed changes
 [gd_scene load_steps=16 format=3 uid="uid://1to61y0lq6vm"]
 
 [ext_resource type="Script" path="res://EnemySide/CharacterBody2D.gd" id="1_tf60y"]
 [ext_resource type="Texture2D" uid="uid://btx7qwohvhwtq" path="res://Assets/Rockstar Studios/Enemies/Alien2.png" id="2_rahty"]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ckgyc"]
@@ -103,6 +109,7 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ig2u0"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 size = Vector2(27, 44)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5jsi"]
@@ -136,6 +143,8 @@ shape = SubResource("RectangleShape2D_q5jsi")
 
 [connection signal="area_entered" from="Hitbox" to="Hitbox" method="_on_area_entered"]
 =======
+=======
+>>>>>>> Stashed changes
 size = Vector2(12, 20)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -149,4 +158,7 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_ig2u0")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
