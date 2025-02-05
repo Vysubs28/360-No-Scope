@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://dshovmehn3sej"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
-[ext_resource type="Texture2D" uid="uid://c5ouoac2mgf1y" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]
-[ext_resource type="Texture2D" uid="uid://de6jgxpjppknh" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="3_bfk64"]
-[ext_resource type="Texture2D" uid="uid://biqai4fepe0lw" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="4_sqkjr"]
+[ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]
+[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="3_bfk64"]
+[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="4_sqkjr"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="6_d32gn"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="6_eonhs"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="8_win8d"]

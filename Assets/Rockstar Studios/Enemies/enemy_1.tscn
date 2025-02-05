@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://cyibs22jky283"]
 
 [ext_resource type="Script" path="res://EnemySide/CharacterBody2D.gd" id="1_nv106"]
-[ext_resource type="Texture2D" uid="uid://c5kqyi2gbkwdn" path="res://Assets/Rockstar Studios/Enemies/Alien1.png" id="2_sjoq3"]
+[ext_resource type="Texture2D" uid="uid://dbhtu8cgiwam" path="res://Assets/Rockstar Studios/Enemies/Alien1.png" id="2_sjoq3"]
 [ext_resource type="Script" path="res://Assets/Rockstar Studios/Enemies/enemy2_Hitbox.gd" id="3_g6owd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a0a1r"]

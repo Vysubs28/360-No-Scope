@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://csys3ywr2yaa"]
 
 [ext_resource type="Script" path="res://Test_Character/bullet.gd" id="1_1f08x"]
-[ext_resource type="Texture2D" uid="uid://ccwitc76kp3b4" path="res://Assets/Rockstar Studios/New Character Design/Arrow.png" id="1_gi78u"]
+[ext_resource type="Texture2D" uid="uid://cb0iai5k8abcj" path="res://Assets/Rockstar Studios/New Character Design/Arrow.png" id="1_gi78u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dj62q"]
 size = Vector2(32, 5)
