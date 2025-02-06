@@ -4064,7 +4064,6 @@ polygon = PackedVector2Array(320, 128, 448, 128, 448, 320, 320, 320)
 
 [node name="MC" parent="." instance=ExtResource("6_eonhs")]
 position = Vector2(65, 99)
-jump_velocity = -200.0
 
 [node name="Enemy1" parent="." instance=ExtResource("6_d32gn")]
 position = Vector2(294, 254)
