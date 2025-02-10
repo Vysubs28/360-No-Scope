@@ -1,0 +1,172 @@
+[gd_scene load_steps=15 format=3 uid="uid://bmk4o2mugnncj"]
+
+[ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_h03hl"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="2_n8nf8"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x1xk4"]
+load_path = "res://.godot/imported/CastleOnTheMountains-Valrok.png-b56d8b05a1e5c413dd1b5024c4aca020.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnta0"]
+texture = SubResource("CompressedTexture2D_x1xk4")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovjlm"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rytu4"]
+bg_color = Color(0.815686, 0.815686, 0.815686, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_150wr"]
+bg_color = Color(0.890196, 0.890196, 0.890196, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uq06e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrrrr"]
+bg_color = Color(0.898039, 0.898039, 0.898039, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxa1q"]
+bg_color = Color(0.913725, 0.913725, 0.913725, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ilxjs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0g81g"]
+bg_color = Color(0.878431, 0.878431, 0.878431, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3oht1"]
+bg_color = Color(0.898039, 0.898039, 0.898039, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_turc4"]
+
+[node name="MainMenu" type="Node2D"]
+position = Vector2(559, 292)
+script = ExtResource("1_h03hl")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -557.0
+offset_top = -290.0
+offset_right = 594.0
+offset_bottom = 351.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dnta0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = -78.0
+offset_top = -70.0
+offset_right = 81.0
+offset_bottom = 74.0
+theme_override_constants/separation = 4
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_n8nf8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rytu4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_150wr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uq06e")
+text = "Start game
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_n8nf8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rrrrr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bxa1q")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ilxjs")
+text = "Levels
+"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_n8nf8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0g81g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3oht1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_turc4")
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -183.0
+offset_top = -253.0
+offset_right = 172.0
+offset_bottom = -159.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.0431373, 0.85098, 0.0431373, 1)
+theme_override_colors/font_shadow_color = Color(0.0235294, 0.0235294, 0.0235294, 1)
+theme_override_fonts/font = ExtResource("2_n8nf8")
+theme_override_font_sizes/font_size = 56
+text = "360 No Scope"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
