@@ -17,5 +17,5 @@ func _ready():
 func _on_mc_shoot(pos):
 	var bullet = bullet_scene.instantiate()
 	$Bullets.add_child(bullet)
-	bullet.position = pos + Vector2(16, -17)
+	bullet.position = pos + Vector2(35, -75)
 	

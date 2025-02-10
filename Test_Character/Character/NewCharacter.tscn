@@ -1,7 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://bp123p4v3j18m"]
+[gd_scene load_steps=30 format=3 uid="uid://bp123p4v3j18m"]
 
 [ext_resource type="Script" path="res://Test_Character/Character/Movement.gd" id="1_j8ykc"]
-[ext_resource type="Texture2D" uid="uid://bgjhq0tlpv5j7" path="res://Assets/Rockstar Studios/New Character Design/New Sprite Sheet.png" id="2_ohuvv"]
+[ext_resource type="Texture2D" uid="uid://bqs6gagc7m27b" path="res://Assets/Rockstar Studios/New Character Design/New Sprite Sheet.png" id="2_ohuvv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kcsvl"]
 atlas = ExtResource("2_ohuvv")
@@ -121,7 +121,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_13bkm")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -210,9 +210,6 @@ animations = [{
 radius = 8.0
 height = 80.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p41jg"]
-size = Vector2(24, 26.5)
-
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(1, 0)
 collision_layer = 2
@@ -223,11 +220,6 @@ script = ExtResource("1_j8ykc")
 position = Vector2(1.19209e-07, -71)
 scale = Vector2(0.871094, 1.65287)
 sprite_frames = SubResource("SpriteFrames_l25yf")
-animation = &"spin"
-frame = 3
-frame_progress = 0.870037
-animation = &"fall _spin"
-frame_progress = 0.303074
 animation = &"death"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -239,12 +231,3 @@ wait_time = 0.6
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]
-[node name="hitbox" type="Area2D" parent="."]
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
-position = Vector2(36, -12)
-shape = SubResource("RectangleShape2D_p41jg")
-
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

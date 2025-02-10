@@ -37,13 +37,13 @@ func _physics_process(delta):
 			can_shoot = false
 			$CooldownTimer.start()
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	direction = Input.get_vector("left", "right", "ui_up", "ui_down")
-	if direction:
-		velocity.x = direction.x * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+		# Get the input direction and handle the movement/deceleration.
+		# As good practice, you should replace UI actions with custom gameplay actions.
+		direction = Input.get_vector("left", "right", "ui_up", "ui_down")
+		if direction:
+			velocity.x = direction.x * speed
+		else:
+			velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
 	update_animation()
@@ -65,11 +65,11 @@ func spin():
 	animation_locked = true
 	
 func land():
-	animated_sprite.play("isle")
+	animated_sprite.play("idle")
 	animation_locked = false
 
 func _on_animated_sprite_2d_animation_finished():
-	if(animated_sprite.animation == "isle"):
+	if(animated_sprite.animation == "idle"):
 		animation_locked = false
 		
 
@@ -81,6 +81,7 @@ func killMC():
 	dead = true
 	velocity.y = 0
 	velocity.x = 0
-func _on_hitbox_body_entered(body):
-	if body.is_in_group("Enemy"):
-		animated_sprite.play("death")
+	animated_sprite.play("death")
+	await animated_sprite.animation_finished
+	queue_free()
+
