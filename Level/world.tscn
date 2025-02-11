@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://dshovmehn3sej"]
+[gd_scene load_steps=23 format=3 uid="uid://dshovmehn3sej"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]
+[ext_resource type="Script" path="res://Level/platforms.gd" id="3_6ivm3"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="3_bfk64"]
 [ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="4_sqkjr"]
 [ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="5_bgna6"]
@@ -10,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="6_ppoq6"]
 [ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="7_redbd"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="8_win8d"]
+[ext_resource type="PackedScene" uid="uid://cglu46dxs7ppu" path="res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn" id="12_0dg7h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("2_mfjbj")
@@ -12636,14 +12638,16 @@ position = Vector2(3, 31)
 script = ExtResource("1_midfu")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -106.0
-offset_top = -213.0
-offset_right = 1228.0
-offset_bottom = 537.0
+offset_left = -36.0
+offset_top = -241.0
+offset_right = 1298.0
+offset_bottom = 509.0
 texture = ExtResource("3_bfk64")
+script = ExtResource("3_6ivm3")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
 position = Vector2(-1, 69)
+collision_mask = 22
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(-64, 136)
@@ -12685,4 +12689,8 @@ position = Vector2(185, 498)
 [node name="trap_3" parent="." instance=ExtResource("8_win8d")]
 position = Vector2(229, 498)
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("12_0dg7h")]
+visible = false
+
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
+[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
