@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0088aw34bbkh"
-path="res://.godot/imported/Goblin.png-169eb721a2e32b7624a3f7ada869f3c9.ctex"
+uid="uid://s4qq4dllsudf"
+path="res://.godot/imported/CastleOnTheMountains-Valrok.png-da3f4ed24eb5df5a7e6cd66787f46dc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rockstar Studios/Kill them all!/Goblin.png"
-dest_files=["res://.godot/imported/Goblin.png-169eb721a2e32b7624a3f7ada869f3c9.ctex"]
+source_file="res://Menu/CastleOnTheMountains-Valrok.png"
+dest_files=["res://.godot/imported/CastleOnTheMountains-Valrok.png-da3f4ed24eb5df5a7e6cd66787f46dc3.ctex"]
 
 [params]
 

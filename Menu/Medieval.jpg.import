@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0088aw34bbkh"
-path="res://.godot/imported/Goblin.png-169eb721a2e32b7624a3f7ada869f3c9.ctex"
+uid="uid://b3uivv16pkg3m"
+path="res://.godot/imported/Medieval.jpg-c859868c1052c7c5d9bec30761fd5077.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rockstar Studios/Kill them all!/Goblin.png"
-dest_files=["res://.godot/imported/Goblin.png-169eb721a2e32b7624a3f7ada869f3c9.ctex"]
+source_file="res://Menu/Medieval.jpg"
+dest_files=["res://.godot/imported/Medieval.jpg-c859868c1052c7c5d9bec30761fd5077.ctex"]
 
 [params]
 
