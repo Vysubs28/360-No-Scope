@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=3 uid="uid://cyibs22jky283"]
 
 [ext_resource type="Script" path="res://EnemySide/CharacterBody2D.gd" id="1_nv106"]
-[ext_resource type="Texture2D" uid="uid://dydbcgvxs7txj" path="res://Assets/Rockstar Studios/Kill them all!/Goblin.png" id="2_hwbv3"]
+[ext_resource type="Texture2D" uid="uid://0088aw34bbkh" path="res://Assets/Rockstar Studios/Kill them all!/Goblin.png" id="2_hwbv3"]
 [ext_resource type="Script" path="res://Assets/Rockstar Studios/Enemies/enemy2_Hitbox.gd" id="3_g6owd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q7l5p"]
