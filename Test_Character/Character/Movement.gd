@@ -89,6 +89,6 @@ func killMC():
 func fly():
 	if not dead:
 		flying = true
-		velocity.y = -1000
+		velocity.y = -500
 		print("should be flying")
 		animated_sprite.play("spin")

@@ -12646,7 +12646,7 @@ texture = ExtResource("3_bfk64")
 script = ExtResource("3_6ivm3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
-position = Vector2(-1, 69)
+position = Vector2(-1, 53)
 collision_mask = 22
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
@@ -12676,18 +12676,12 @@ layer_0/tile_data = PackedInt32Array(524308, 1, 0, 589844, 1, 1, 655380, 0, 0, 7
 position = Vector2(47, 211)
 
 [node name="Enemy1" parent="." instance=ExtResource("6_d32gn")]
-position = Vector2(297, 323)
+position = Vector2(300, 323)
 
 [node name="trap_1" parent="." instance=ExtResource("8_win8d")]
-position = Vector2(143, 498)
+position = Vector2(192, 477)
 
 [node name="Bullets" type="Node2D" parent="."]
-
-[node name="trap_2" parent="." instance=ExtResource("8_win8d")]
-position = Vector2(185, 498)
-
-[node name="trap_3" parent="." instance=ExtResource("8_win8d")]
-position = Vector2(229, 498)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("12_0dg7h")]
 visible = false
