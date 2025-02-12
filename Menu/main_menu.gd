@@ -15,7 +15,7 @@ func _on_start_pressed():
 
 
 func _on_levels_pressed():
-	print("pressed")
+	get_tree().change_scene_to_file("res://LevelMenu/LevelMenu.tscn")
 
 
 func _on_exit_pressed():
