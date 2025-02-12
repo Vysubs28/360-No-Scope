@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="360 No Scope"
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -19,6 +20,9 @@ run/main_scene="res://Level/level1.tscn"
 =======
 run/main_scene="res://Level/world.tscn"
 >>>>>>> Dev2
+=======
+run/main_scene="res://Level/level1.tscn"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
