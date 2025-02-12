@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb0iai5k8abcj"
-path="res://.godot/imported/Arrow.png-564e532635c210ec133c077d05ae7cfc.ctex"
+path="res://.godot/imported/Arrow.png-d8331445d6aa3a38644e968ee1dcb21b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rockstar Studios/New Character Design/Arrow.png"
-dest_files=["res://.godot/imported/Arrow.png-564e532635c210ec133c077d05ae7cfc.ctex"]
+source_file="res://Level/Arrow.png"
+dest_files=["res://.godot/imported/Arrow.png-d8331445d6aa3a38644e968ee1dcb21b.ctex"]
 
 [params]
 

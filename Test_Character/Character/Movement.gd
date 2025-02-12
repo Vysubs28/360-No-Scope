@@ -13,37 +13,38 @@ var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
 var can_shoot : bool = true
 var dead : bool = false
+var flying : bool = false
 
 signal shoot(pos: Vector2)
 
 
 func _physics_process(delta):
 	if (not dead):# Add the gravity.
-		if not is_on_floor():
-			velocity.y += gravity * delta
-			was_in_air = true
-		else: 
-			if was_in_air == true:
-				land()
+		if(not flying):
+			if not is_on_floor():
+				velocity.y += gravity * delta
+				was_in_air = true
+			else: 
+				if was_in_air == true:
+					land()
+				was_in_air = false
+	# Handle jump. # spin = jump
+	if Input.is_action_just_pressed("spin"): 
+		if is_on_floor():
+			spin()
 			
-			was_in_air = false
-		# Handle jump. # spin = jump
-		if Input.is_action_just_pressed("spin"): 
-			if is_on_floor():
-				spin()
-				
-		if Input.is_action_just_pressed("shoot") and can_shoot:
-			shoot.emit(global_position)
-			can_shoot = false
-			$CooldownTimer.start()
+	if Input.is_action_just_pressed("shoot") and can_shoot and not flying:
+		shoot.emit(global_position)
+		can_shoot = false
+		$CooldownTimer.start()
 
-		# Get the input direction and handle the movement/deceleration.
-		# As good practice, you should replace UI actions with custom gameplay actions.
-		direction = Input.get_vector("left", "right", "ui_up", "ui_down")
-		if direction:
-			velocity.x = direction.x * speed
-		else:
-			velocity.x = move_toward(velocity.x, 0, speed)
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	direction = Input.get_vector("left", "right", "ui_up", "ui_down")
+	if direction and not flying:
+		velocity.x = direction.x * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
 	update_animation()
@@ -85,3 +86,9 @@ func killMC():
 	await animated_sprite.animation_finished
 	queue_free()
 
+func fly():
+	if not dead:
+		flying = true
+		velocity.y = -500
+		print("should be flying")
+		animated_sprite.play("spin")
