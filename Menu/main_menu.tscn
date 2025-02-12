@@ -103,7 +103,7 @@ offset_right = -126.0
 offset_bottom = 264.0
 theme_override_constants/separation = 4
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
@@ -117,10 +117,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_rytu4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_150wr")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_uq06e")
-text = "Start game
+text = "Start 
 "
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="levels" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
@@ -137,7 +137,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_ilxjs")
 text = "Levels
 "
 
-[node name="Button3" type="Button" parent="VBoxContainer"]
+[node name="exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
@@ -174,6 +174,6 @@ text = "360 No Scope"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_levels_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
