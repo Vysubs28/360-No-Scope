@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dshovmehn3sej"]
+[gd_scene load_steps=26 format=3 uid="uid://dshovmehn3sej"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="6_ppoq6"]
 [ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="7_redbd"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="8_win8d"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="11_m7f47"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("2_mfjbj")
@@ -12631,6 +12632,35 @@ sources/1 = SubResource("TileSetAtlasSource_eqmm3")
 sources/2 = SubResource("TileSetAtlasSource_krybq")
 sources/3 = SubResource("TileSetAtlasSource_5slci")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oq36g"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bank5"]
+bg_color = Color(0.878431, 0.878431, 0.878431, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhvl8"]
+bg_color = Color(0.898039, 0.898039, 0.898039, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22ult"]
+
 [node name="World" type="Node2D"]
 position = Vector2(3, 31)
 script = ExtResource("1_midfu")
@@ -12679,5 +12709,73 @@ position = Vector2(190, 497)
 
 [node name="Bullets" type="Node2D" parent="."]
 
+<<<<<<< HEAD:Level/world.tscn
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
+=======
+<<<<<<< Updated upstream
+<<<<<<< HEAD:Level/level1.tscn
+<<<<<<< Updated upstream:Level/world.tscn
+[node name="trap_2" parent="." instance=ExtResource("8_win8d")]
+position = Vector2(185, 498)
+
+[node name="trap_3" parent="." instance=ExtResource("8_win8d")]
+position = Vector2(229, 498)
+
+[connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
+=======
+=======
+>>>>>>> Stashed changes
+[node name="exit" type="Button" parent="."]
+offset_left = 642.0
+offset_top = -23.0
+offset_right = 695.0
+offset_bottom = 14.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_m7f47")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_oq36g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bank5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qhvl8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_22ult")
+text = "Exit
+"
+
+[node name="restart" type="Button" parent="."]
+offset_left = 642.0
+offset_top = 22.0
+offset_right = 695.0
+offset_bottom = 59.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_m7f47")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_oq36g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bank5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qhvl8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_22ult")
+text = "R
+"
+
+[connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
+[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes:Level/level1.tscn
+=======
+[connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
+[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
+>>>>>>> Dev2:Level/world.tscn
+=======
+>>>>>>> Stashed changes
+>>>>>>> Vyaas:Level/level1.tscn
