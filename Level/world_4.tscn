@@ -1,22 +1,22 @@
 [gd_scene load_steps=23 format=3 uid="uid://cwfusthytnmj6"]
 
-[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="1_kqf0s"]
-[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="1_r551x"]
-[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="2_4shv2"]
-[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="2_tlxel"]
-[ext_resource type="Texture2D" uid="uid://jy8arjdxeuvc" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_10.png" id="3_sttrb"]
-[ext_resource type="Texture2D" uid="uid://cu51awktln6sb" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_04.png" id="4_8cinq"]
-[ext_resource type="Texture2D" uid="uid://bd0pdwlbtkta7" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_03.png" id="5_ky80j"]
-[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="6_uw0kl"]
-[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="7_own8m"]
-[ext_resource type="Texture2D" uid="uid://c80q2knx47nxd" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_08.png" id="8_k8k6d"]
-[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="9_p46u0"]
+[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="1_x0uel"]
+[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="2_s0yx8"]
+[ext_resource type="Texture2D" uid="uid://jy8arjdxeuvc" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_10.png" id="3_edjlt"]
+[ext_resource type="Texture2D" uid="uid://cu51awktln6sb" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_04.png" id="4_6w131"]
+[ext_resource type="Texture2D" uid="uid://bd0pdwlbtkta7" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_03.png" id="5_6o07m"]
+[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="6_7t3s7"]
+[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="7_8hbfd"]
+[ext_resource type="Texture2D" uid="uid://c80q2knx47nxd" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_08.png" id="8_olx3m"]
+[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="9_vv8jj"]
+[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="10_45yms"]
+[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="11_vwgwq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kr7ra"]
 size = Vector2(140, 427.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48i6m"]
-texture = ExtResource("1_kqf0s")
+texture = ExtResource("1_x0uel")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -83,7 +83,7 @@ texture = ExtResource("1_kqf0s")
 7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_73u7j"]
-texture = ExtResource("2_tlxel")
+texture = ExtResource("2_s0yx8")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -150,7 +150,7 @@ texture = ExtResource("2_tlxel")
 7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lc1hq"]
-texture = ExtResource("3_sttrb")
+texture = ExtResource("3_edjlt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -211,7 +211,7 @@ texture = ExtResource("3_sttrb")
 7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sofbf"]
-texture = ExtResource("4_8cinq")
+texture = ExtResource("4_6w131")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -273,7 +273,7 @@ texture = ExtResource("4_8cinq")
 7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwsh6"]
-texture = ExtResource("5_ky80j")
+texture = ExtResource("5_6o07m")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -319,7 +319,7 @@ texture = ExtResource("5_ky80j")
 7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sgm4e"]
-texture = ExtResource("6_uw0kl")
+texture = ExtResource("6_7t3s7")
 0:0/0 = 0
 1:0/0 = 0
 3:0/0 = 0
@@ -351,7 +351,7 @@ texture = ExtResource("6_uw0kl")
 7:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u8tao"]
-texture = ExtResource("7_own8m")
+texture = ExtResource("7_8hbfd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -412,7 +412,7 @@ texture = ExtResource("7_own8m")
 5:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wbib"]
-texture = ExtResource("8_k8k6d")
+texture = ExtResource("8_olx3m")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -430,7 +430,7 @@ texture = ExtResource("8_k8k6d")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_al5ld"]
-texture = ExtResource("9_p46u0")
+texture = ExtResource("9_vv8jj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -459,7 +459,7 @@ sources/6 = SubResource("TileSetAtlasSource_u8tao")
 sources/7 = SubResource("TileSetAtlasSource_8wbib")
 sources/8 = SubResource("TileSetAtlasSource_al5ld")
 
-[node name="World2" type="Node2D"]
+[node name="World4" type="Node2D"]
 position = Vector2(174, 307)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -482,8 +482,8 @@ layer_0/tile_data = PackedInt32Array(-589828, 1, 4, -524292, 0, 2, -458756, 0, 3
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(351, 93, 347, -123, 490, -123, 494, 242, 354, 241, 352, 121, 384, 171, 474, 170, 473, 71)
 
-[node name="Enemy1" parent="." instance=ExtResource("1_r551x")]
+[node name="Enemy1" parent="." instance=ExtResource("10_45yms")]
 position = Vector2(412, 147)
 
-[node name="MC" parent="." instance=ExtResource("2_4shv2")]
+[node name="MC" parent="." instance=ExtResource("11_vwgwq")]
 position = Vector2(104, -192)
