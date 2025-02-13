@@ -11,7 +11,22 @@ config_version=5
 [application]
 
 config/name="360 No Scope"
+<<<<<<< HEAD
 run/main_scene="res://Level/world.tscn"
+=======
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+run/main_scene="res://Level/level1.tscn"
+>>>>>>> Stashed changes
+=======
+run/main_scene="res://Level/world.tscn"
+>>>>>>> Dev2
+=======
+run/main_scene="res://Level/level1.tscn"
+>>>>>>> Stashed changes
+>>>>>>> Vyaas
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
