@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bmk4o2mugnncj"]
+[gd_scene load_steps=12 format=3 uid="uid://bmk4o2mugnncj"]
 
 [ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_h03hl"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="2_n8nf8"]
@@ -55,26 +55,6 @@ shadow_size = 5
 shadow_offset = Vector2(2.08165e-12, 3.41)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ilxjs"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0g81g"]
-bg_color = Color(0.878431, 0.878431, 0.878431, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(2.08165e-12, 3.41)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3oht1"]
-bg_color = Color(0.898039, 0.898039, 0.898039, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(2.08165e-12, 3.41)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_turc4"]
 
 [node name="MainMenu" type="Node2D"]
 position = Vector2(559, 292)
@@ -137,23 +117,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_ilxjs")
 text = "Levels
 "
 
-[node name="exit" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 6
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_n8nf8")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0g81g")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3oht1")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_turc4")
-text = "Exit
-"
-
 [node name="Label" type="Label" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
@@ -176,4 +139,3 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/levels" to="." method="_on_levels_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
