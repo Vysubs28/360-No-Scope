@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://xi2ad3p18yni"]
+[gd_scene load_steps=30 format=3 uid="uid://xi2ad3p18yni"]
 
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_juv4a"]
+[ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_kfv5p"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="2_1gf6f"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="3_jtwyi"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="4_iotoj"]
@@ -10,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="8_frxpe"]
 [ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="9_vswuy"]
 [ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="10_1e1tx"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_f82bw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("4_iotoj")
@@ -12857,7 +12859,66 @@ sources/5 = SubResource("TileSetAtlasSource_6hbq1")
 sources/6 = SubResource("TileSetAtlasSource_e6s6h")
 sources/7 = SubResource("TileSetAtlasSource_sboxm")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_247jj"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ehbie"]
+bg_color = Color(0.878431, 0.878431, 0.878431, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yi4x3"]
+bg_color = Color(0.898039, 0.898039, 0.898039, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b51cm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6rrma"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d5ni2"]
+bg_color = Color(0.878431, 0.878431, 0.878431, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37lb8"]
+bg_color = Color(0.898039, 0.898039, 0.898039, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ascj"]
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_kfv5p")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -120.0
@@ -12888,3 +12949,46 @@ polygon = PackedVector2Array(0, 208, 104, 208, 104, 528, 0, 528)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(192, 304, 288, 304, 288, 512, 192, 512)
+
+[node name="exit" type="Button" parent="."]
+offset_left = 645.0
+offset_top = 15.0
+offset_right = 698.0
+offset_bottom = 52.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_f82bw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_247jj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ehbie")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yi4x3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b51cm")
+text = "Exit
+"
+
+[node name="restart" type="Button" parent="."]
+offset_left = 645.0
+offset_top = 66.0
+offset_right = 698.0
+offset_bottom = 103.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_f82bw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6rrma")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d5ni2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_37lb8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0ascj")
+text = "R
+"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
