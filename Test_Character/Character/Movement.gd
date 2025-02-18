@@ -5,6 +5,9 @@ extends CharacterBody2D
 @export var jump_velocity : float = -200.0
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
+@onready var sfx_jump = $sfx_jump
+@onready var sfx_die = $sfx_die
+@onready var sfx_arrow = $sfx_arrow
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -37,6 +40,7 @@ func _physics_process(delta):
 		shoot.emit(global_position)
 		can_shoot = false
 		$CooldownTimer.start()
+		sfx_arrow.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -60,17 +64,30 @@ func update_animation():
 			animated_sprite.play("fall _spin")
 			animation_locked = true
 			
+func play_delayed_animation():
+	animated_sprite.play("idle")
+	await get_tree().create_timer(4.0).timeout
+	if not animation_locked and is_on_floor() and direction.x == 0:
+		animated_sprite.play("delayed_ideal")
+		
+func check_for_delayed_animation():
+	if not animation_locked and is_on_floor() and direction.x == 0 and animated_sprite.animation == "ideal":
+		play_delayed_animation()
+		
+
 func spin():
 	velocity.y = jump_velocity
 	animated_sprite.play("spin")
 	animation_locked = true
+	sfx_jump.play()
+	sfx_arrow.play()
 	
 func land():
 	animated_sprite.play("idle")
 	animation_locked = false
 
 func _on_animated_sprite_2d_animation_finished():
-	if(animated_sprite.animation == "idle"):
+	if animated_sprite.animation == "idle" or animated_sprite.animation == "delayed_ideal":
 		animation_locked = false
 		
 
@@ -83,6 +100,7 @@ func killMC():
 	velocity.y = 0
 	velocity.x = 0
 	animated_sprite.play("death")
+	sfx_die.play()
 	await animated_sprite.animation_finished
 	queue_free()
 

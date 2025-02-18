@@ -2,11 +2,14 @@ extends CharacterBody2D
 
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
+@onready var sfx_goblin = $sfx_goblin
+
 
 signal enemy_died
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_dead = false
+
 
 
 func _physics_process(delta):
@@ -38,5 +41,7 @@ func killEnemy():
 	enemy_died.emit()
 	print('alien1 hit')
 	animated_sprite.play("death")
+	sfx_goblin.play()
 	await animated_sprite.animation_finished
 	queue_free()
+

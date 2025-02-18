@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://deh1n7llu4ju4"
+path="res://.godot/imported/bow_release.mp3-02a2d2aa6d9b583c43cd2d27006d2b68.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3"
+dest_files=["res://.godot/imported/bow_release.mp3-02a2d2aa6d9b583c43cd2d27006d2b68.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
