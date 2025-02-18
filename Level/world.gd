@@ -18,15 +18,6 @@ func _on_mc_shoot(pos):
 	var bullet = bullet_scene.instantiate()
 	$Bullets.add_child(bullet)
 	bullet.position = pos + Vector2(8, -170)
-	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Dev2
->>>>>>> Vyaas
 
 
 func _on_enemy_1_enemy_died():
@@ -36,22 +27,11 @@ func _on_enemy_1_enemy_died():
 		player.fly()
 	else:
 		print("found an error")
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
+
 		
 func _on_exit_pressed():
 	get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
 	
 func _on_restart_pressed():
 	get_tree().reload_current_scene()
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Dev2
-=======
->>>>>>> Stashed changes
->>>>>>> Vyaas
+
