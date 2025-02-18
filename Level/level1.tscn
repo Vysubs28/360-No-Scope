@@ -12672,7 +12672,7 @@ offset_right = 1228.0
 offset_bottom = 537.0
 texture = ExtResource("3_bfk64")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
 position = Vector2(-1, 69)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
