@@ -92,3 +92,5 @@ func fly():
 		velocity.y = -500
 		print("should be flying")
 		animated_sprite.play("spin")
+		
+

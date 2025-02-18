@@ -13,7 +13,7 @@ func _ready():
 	polygon_2d2.polygon = collision_polygon_2d2.polygon
 	
 
-
+ 
 func _on_mc_shoot(pos): 
 	var bullet = bullet_scene.instantiate()
 	$Bullets.add_child(bullet)
