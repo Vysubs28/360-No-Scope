@@ -24,7 +24,7 @@ func _on_enemy_1_enemy_died():
 	var player = get_node("MC")
 	if player:
 		player.fly()
-		get_tree().change_scene_to_file("res://LevelMenu/NextLevel_1.tscn")
+		get_tree().change_scene_to_file("res://LevelMenu/Level2.tscn")
 	else:
 		print("found an error")
 		

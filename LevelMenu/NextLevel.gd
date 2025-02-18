@@ -10,8 +10,4 @@ func _ready():
 func _on_exit_pressed():
 	get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
 
-func _on_next_pressed():
-	var current_scence_file = get_tree().current_scene.scene_file_path
-	var next_level_number = current_scence_file.to_int() + 1
-	var next_level_path = "res://LevelMenu/NextLevel_" + str(next_level_number) + ".tscn"
-	get_tree().change_scene_to_file(next_level_path)
+
