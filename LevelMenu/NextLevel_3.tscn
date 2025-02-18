@@ -1,20 +1,20 @@
 [gd_scene load_steps=30 format=3 uid="uid://xi2ad3p18yni"]
 
-[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_juv4a"]
-[ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_kfv5p"]
-[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="2_1gf6f"]
-[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="3_jtwyi"]
-[ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="4_iotoj"]
-[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="5_1ehch"]
-[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="6_wo1dy"]
-[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="7_14diq"]
-[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="8_frxpe"]
-[ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="9_vswuy"]
-[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="10_1e1tx"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_f82bw"]
+[ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_22nee"]
+[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_latpt"]
+[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_rpal7"]
+[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_m00up"]
+[ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="5_ycuru"]
+[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="6_4gc6r"]
+[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="7_yntxb"]
+[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="8_kd7b5"]
+[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="9_ofhj8"]
+[ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="10_1yl1h"]
+[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="11_4ks0b"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_0rn5w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
-texture = ExtResource("4_iotoj")
+texture = ExtResource("5_ycuru")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -428,7 +428,7 @@ texture = ExtResource("4_iotoj")
 8:13/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hhdq"]
-texture = ExtResource("1_juv4a")
+texture = ExtResource("2_latpt")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -11885,7 +11885,7 @@ texture = ExtResource("1_juv4a")
 82:45/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fourm"]
-texture = ExtResource("5_1ehch")
+texture = ExtResource("6_4gc6r")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -12081,7 +12081,7 @@ texture = ExtResource("5_1ehch")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ox83l"]
 resource_name = "G2"
-texture = ExtResource("6_wo1dy")
+texture = ExtResource("7_yntxb")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -12276,7 +12276,7 @@ texture = ExtResource("6_wo1dy")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i1fpb"]
-texture = ExtResource("7_14diq")
+texture = ExtResource("8_kd7b5")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -12471,7 +12471,7 @@ texture = ExtResource("7_14diq")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hbq1"]
-texture = ExtResource("8_frxpe")
+texture = ExtResource("9_ofhj8")
 6:0/0 = 0
 6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:0/0/physics_layer_0/angular_velocity = 0.0
@@ -12603,7 +12603,7 @@ texture = ExtResource("8_frxpe")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e6s6h"]
-texture = ExtResource("9_vswuy")
+texture = ExtResource("10_1yl1h")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -12798,7 +12798,7 @@ texture = ExtResource("9_vswuy")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sboxm"]
-texture = ExtResource("10_1e1tx")
+texture = ExtResource("11_4ks0b")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -12918,19 +12918,19 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ascj"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_kfv5p")
+script = ExtResource("1_22nee")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -120.0
 offset_top = -200.0
 offset_right = 1214.0
 offset_bottom = 793.0
-texture = ExtResource("1_juv4a")
+texture = ExtResource("2_latpt")
 
-[node name="MC" parent="." instance=ExtResource("2_1gf6f")]
+[node name="MC" parent="." instance=ExtResource("3_rpal7")]
 position = Vector2(47, 211)
 
-[node name="Enemy1" parent="." instance=ExtResource("3_jtwyi")]
+[node name="Enemy1" parent="." instance=ExtResource("4_m00up")]
 position = Vector2(248, 296)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -12961,7 +12961,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_f82bw")
+theme_override_fonts/font = ExtResource("12_0rn5w")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_247jj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ehbie")
@@ -12981,7 +12981,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_f82bw")
+theme_override_fonts/font = ExtResource("12_0rn5w")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_6rrma")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d5ni2")
