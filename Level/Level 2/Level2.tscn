@@ -1,15 +1,15 @@
 [gd_scene load_steps=18 format=3 uid="uid://dsv156meddb2"]
 
-[ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_1nw0x"]
-[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_b25mk"]
-[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="3_hb3ty"]
-[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="4_fbfhe"]
-[ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="5_febj2"]
-[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="6_rht3w"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="7_m8kba"]
+[ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
+[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
+[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="5_4fjv5"]
+[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="7_esb6l"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="7_v0nh1"]
+[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="8_x1m7g"]
+[ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="9_pfwbr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nvntn"]
-texture = ExtResource("3_hb3ty")
+texture = ExtResource("5_4fjv5")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -137,14 +137,14 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i8j5n"]
 
 [node name="Level2" type="Node2D"]
-script = ExtResource("1_1nw0x")
+script = ExtResource("1_d6x24")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -120.0
 offset_top = -200.0
 offset_right = 1214.0
 offset_bottom = 793.0
-texture = ExtResource("2_b25mk")
+texture = ExtResource("1_uxmr4")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2oyux")
@@ -177,10 +177,10 @@ position = Vector2(14, 23)
 [node name="trap_1" parent="." instance=ExtResource("9_pfwbr")]
 position = Vector2(191, 516)
 
-[node name="Enemy1" parent="." instance=ExtResource("6_rht3w")]
+[node name="Enemy1" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(48, 376)
 
-[node name="Enemy2" parent="." instance=ExtResource("6_rht3w")]
+[node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(295, 196)
 
 [node name="exit" type="Button" parent="."]
@@ -194,7 +194,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_m8kba")
+theme_override_fonts/font = ExtResource("7_v0nh1")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_yffdk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0rwb7")
@@ -214,7 +214,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_m8kba")
+theme_override_fonts/font = ExtResource("7_v0nh1")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_jifom")
 theme_override_styles/hover = SubResource("StyleBoxFlat_20suc")
