@@ -22,9 +22,7 @@ func _on_mc_2_shoot(pos):
 	var bullet = bullet_scene.instantiate()
 	$Bullets2.add_child(bullet)
 	bullet.position = pos + Vector2(-10, -170)
-	print("shot an arrow")
-	print(pos)
-	print(bullet.position)
+
 
 
 func _on_enemy_1_enemy_died():

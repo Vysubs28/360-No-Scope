@@ -262,7 +262,7 @@ offset_right = 1215.0
 offset_bottom = 540.0
 texture = ExtResource("1_rhd7h")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(-1, -4)
@@ -323,5 +323,9 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_pelh5")
 text = "R
 "
 
+[node name="Bullets2" type="Node" parent="."]
+
+[connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
+[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

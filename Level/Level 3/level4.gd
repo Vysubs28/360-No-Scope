@@ -1,6 +1,6 @@
 extends Node2D
 
-
+const bullet_scene: PackedScene = preload("res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -10,3 +10,13 @@ func _on_exit_pressed():
 
 func _on_restart_pressed():
 	get_tree().reload_current_scene()
+
+
+func _on_mc_shoot(pos):
+	var bullet = bullet_scene.instantiate()
+	$Bullets2.add_child(bullet)
+	bullet.position = pos + Vector2(-50, -140)
+
+
+func _on_enemy_1_enemy_died():
+	print("we got the signal")
