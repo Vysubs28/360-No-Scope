@@ -18,5 +18,3 @@ func _on_levels_pressed():
 	get_tree().change_scene_to_file("res://LevelMenu/LevelMenu.tscn")
 
 
-func _on_exit_pressed():
-	print("pressed")

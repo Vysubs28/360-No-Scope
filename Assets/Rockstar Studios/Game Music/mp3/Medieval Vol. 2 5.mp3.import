@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://balsb8ui3b2jh"
+path="res://.godot/imported/Medieval Vol. 2 5.mp3-0cdd8fa6921b9a881d19bd9c454c6bd9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Game Music/mp3/Medieval Vol. 2 5.mp3"
+dest_files=["res://.godot/imported/Medieval Vol. 2 5.mp3-0cdd8fa6921b9a881d19bd9c454c6bd9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
