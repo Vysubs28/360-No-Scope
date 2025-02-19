@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cg2y2wwcv2kdj"]
+[gd_scene load_steps=26 format=3 uid="uid://w5su4avq3it"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]

@@ -1,11 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://cc57xa14jrge6"]
+[gd_scene load_steps=12 format=3 uid="uid://bp37jjmu7v8w4"]
 
-[ext_resource type="Script" path="res://LevelMenu/NextLevel.gd" id="1_0tvwn"]
-[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="2_s6icy"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="3_rgc6x"]
+[ext_resource type="Script" path="res://LevelMenu/LevelMenu.gd" id="1_fgpqf"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="2_4d07r"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="3_qb871"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
-texture = ExtResource("2_s6icy")
+texture = ExtResource("2_4d07r")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp8qu"]
 bg_color = Color(0.988235, 0.988235, 0.988235, 1)
@@ -48,14 +48,14 @@ corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eu0yv"]
 
-[node name="NextLevel" type="Control"]
+[node name="LevelMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0tvwn")
+script = ExtResource("1_fgpqf")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -66,59 +66,88 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_3qpow")
 
-[node name="Exit" type="Button" parent="."]
+[node name="Level1" type="Button" parent="."]
 layout_mode = 2
-offset_left = 119.0
-offset_top = 275.0
-offset_right = 186.0
-offset_bottom = 328.0
+offset_left = 48.0
+offset_top = 30.0
+offset_right = 115.0
+offset_bottom = 107.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_rgc6x")
+theme_override_fonts/font = ExtResource("3_qb871")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fispc")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_nvejr")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_krb88")
-text = "Exit"
+text = "1"
 
-[node name="Next" type="Button" parent="."]
+[node name="Level2" type="Button" parent="."]
 layout_mode = 2
-offset_left = 513.0
-offset_top = 263.0
-offset_right = 674.0
-offset_bottom = 340.0
+offset_left = 172.0
+offset_top = 27.0
+offset_right = 233.0
+offset_bottom = 104.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_rgc6x")
+theme_override_fonts/font = ExtResource("3_qb871")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
-text = "->"
+text = "2"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -152.0
-offset_top = 3.0
-offset_right = 160.0
-offset_bottom = 90.0
+[node name="Level3" type="Button" parent="."]
+layout_mode = 2
+offset_left = 300.0
+offset_top = 25.0
+offset_right = 367.0
+offset_bottom = 102.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("3_rgc6x")
-theme_override_font_sizes/font_size = 83
-text = "Victorious"
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_font_sizes/font_size = 63
+theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
+text = "3"
 
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[node name="Level4" type="Button" parent="."]
+layout_mode = 2
+offset_left = 428.0
+offset_top = 24.0
+offset_right = 495.0
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_font_sizes/font_size = 63
+theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
+text = "4
+"
+
+[connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Level4" to="." method="_on_level_4_pressed"]
