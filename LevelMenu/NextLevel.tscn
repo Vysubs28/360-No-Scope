@@ -121,3 +121,4 @@ theme_override_font_sizes/font_size = 83
 text = "Victorious"
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
