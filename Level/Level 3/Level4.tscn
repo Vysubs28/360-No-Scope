@@ -1,12 +1,12 @@
 [gd_scene load_steps=21 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
-[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Game Music/PNG/Background/Background_01.png" id="1_rhd7h"]
+[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="2_bmnu1"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="3_7f6ab"]
-[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_01.png" id="4_jj1te"]
-[ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_02.png" id="5_y27ul"]
-[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_06.png" id="6_diu0v"]
+[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="4_jj1te"]
+[ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="5_y27ul"]
+[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="6_diu0v"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="8_kce8e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wu8xi"]
@@ -270,7 +270,7 @@ polygon = PackedVector2Array(32, 32, 160, 32, 192, 384, 0, 384)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(128, 24)
-polygon = PackedVector2Array(416, 40, 352, 112, 296, 168, 296, 360, 416, 360)
+polygon = PackedVector2Array(416, 40, 294, 166, 296, 360, 416, 360)
 
 [node name="MC" parent="." instance=ExtResource("2_bmnu1")]
 position = Vector2(97, 41)
