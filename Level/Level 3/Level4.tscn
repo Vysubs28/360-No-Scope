@@ -270,7 +270,7 @@ polygon = PackedVector2Array(32, 32, 160, 32, 192, 384, 0, 384)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(128, 24)
-polygon = PackedVector2Array(416, 40, 352, 112, 296, 168, 296, 360, 416, 360)
+polygon = PackedVector2Array(416, 40, 294, 166, 296, 360, 416, 360)
 
 [node name="MC" parent="." instance=ExtResource("2_bmnu1")]
 position = Vector2(97, 41)
