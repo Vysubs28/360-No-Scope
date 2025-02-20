@@ -1,7 +1,8 @@
-[gd_scene load_steps=30 format=3 uid="uid://bp123p4v3j18m"]
+[gd_scene load_steps=31 format=3 uid="uid://bp123p4v3j18m"]
 
 [ext_resource type="Script" path="res://Test_Character/Character/Movement.gd" id="1_j8ykc"]
 [ext_resource type="Texture2D" uid="uid://bqs6gagc7m27b" path="res://Assets/Rockstar Studios/New Character Design/New Sprite Sheet.png" id="2_ohuvv"]
+[ext_resource type="AudioStream" uid="uid://cjej5otqoukq2" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/male-scream-in-fear-123079.mp3" id="3_oac2d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kcsvl"]
 atlas = ExtResource("2_ohuvv")
@@ -160,7 +161,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -220,14 +221,18 @@ script = ExtResource("1_j8ykc")
 position = Vector2(1.19209e-07, -71)
 scale = Vector2(0.871094, 1.65287)
 sprite_frames = SubResource("SpriteFrames_l25yf")
-animation = &"death"
+animation = &"idle"
+frame_progress = 0.989571
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -59)
 shape = SubResource("CapsuleShape2D_xxucf")
 
 [node name="CooldownTimer" type="Timer" parent="."]
-wait_time = 0.6
+wait_time = 0.3
+
+[node name="Death_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_oac2d")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]
