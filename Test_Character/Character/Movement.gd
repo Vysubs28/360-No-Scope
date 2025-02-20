@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var jump_velocity : float = -200.0
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
+@onready var Death_sfx = $Death_sfx
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -83,8 +84,10 @@ func killMC():
 	velocity.y = 0
 	velocity.x = 0
 	animated_sprite.play("death")
+	Death_sfx.play()
 	await animated_sprite.animation_finished
 	queue_free()
+	
 
 func fly():
 	if not dead:
