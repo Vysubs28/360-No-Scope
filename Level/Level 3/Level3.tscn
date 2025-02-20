@@ -1,10 +1,11 @@
-[gd_scene load_steps=30 format=3 uid="uid://xi2ad3p18yni"]
+[gd_scene load_steps=31 format=3 uid="uid://xi2ad3p18yni"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="5_bmyfd"]
+[ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="5_lvrpa"]
 [ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="6_46b0x"]
 [ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="7_thmvv"]
 [ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="8_yropm"]
@@ -12932,6 +12933,9 @@ position = Vector2(47, 211)
 
 [node name="Enemy1" parent="." instance=ExtResource("4_74ef6")]
 position = Vector2(248, 296)
+
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1"]
+stream = ExtResource("5_lvrpa")
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2
