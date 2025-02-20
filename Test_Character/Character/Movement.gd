@@ -41,11 +41,12 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	direction = Input.get_vector("left", "right", "ui_up", "ui_down")
-	if direction and not flying:
-		velocity.x = direction.x * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+	if not dead:
+		direction = Input.get_vector("left", "right", "ui_up", "ui_down")
+		if direction and not flying:
+			velocity.x = direction.x * speed
+		else:
+			velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
 	update_animation()
@@ -81,6 +82,7 @@ func _on_cooldown_timer_timeout():
 func killMC():
 	print('player died')
 	dead = true
+	can_shoot = false
 	velocity.y = 0
 	velocity.x = 0
 	animated_sprite.play("death")
