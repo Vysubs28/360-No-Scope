@@ -5,12 +5,14 @@ extends Node2D
 
 @onready var collision_polygon_2d2 = $StaticBody2D/CollisionPolygon2D2
 @onready var polygon_2d2 = $StaticBody2D/CollisionPolygon2D2/Polygon2D2
+@onready var sfx_music = $sfx_music
 
 const bullet_scene: PackedScene = preload("res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn")
 
 func _ready():
 	polygon_2d.polygon = collision_polygon_2d.polygon
 	polygon_2d2.polygon = collision_polygon_2d2.polygon
+	sfx_music.play()
 	
 
  

@@ -1,10 +1,13 @@
 extends Node2D
 
+@onready var sfx_music = $sfx_music
+
+
 const bullet_scene: PackedScene = preload("res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn")
 var enemies = 2
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	sfx_music.play()
 
 
 func _on_exit_pressed():

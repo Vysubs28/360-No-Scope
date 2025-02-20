@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://bmk4o2mugnncj"]
+[gd_scene load_steps=13 format=3 uid="uid://bmk4o2mugnncj"]
 
 [ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_h03hl"]
+[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_cncfc"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="2_n8nf8"]
 [ext_resource type="Texture2D" uid="uid://b3uivv16pkg3m" path="res://Menu/Medieval.jpg" id="2_q053n"]
 
@@ -60,6 +61,10 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 position = Vector2(559, 292)
 script = ExtResource("1_h03hl")
 
+[node name="sfx_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_cncfc")
+volume_db = -26.0
+
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
@@ -117,6 +122,23 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_ilxjs")
 text = "Levels
 "
 
+[node name="exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_n8nf8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rrrrr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bxa1q")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ilxjs")
+text = "Exit
+"
+
 [node name="Label" type="Label" parent="."]
 offset_left = -385.0
 offset_top = -296.0
@@ -132,3 +154,5 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_levels_pressed"]

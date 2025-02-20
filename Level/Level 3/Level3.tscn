@@ -1,11 +1,14 @@
-[gd_scene load_steps=30 format=3 uid="uid://xi2ad3p18yni"]
+[gd_scene load_steps=33 format=3 uid="uid://xi2ad3p18yni"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
+[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_i1jmx"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
+[ext_resource type="AudioStream" uid="uid://byv7fl8wd0m6q" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="5_1n1om"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="5_bmyfd"]
 [ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="6_46b0x"]
+[ext_resource type="AudioStream" uid="uid://1gox0rj0nxc1" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="6_kj2pw"]
 [ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="7_thmvv"]
 [ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="8_yropm"]
 [ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="9_qe4ba"]
@@ -12920,6 +12923,10 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_gql3o")
 
+[node name="sfx_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_i1jmx")
+volume_db = -26.0
+
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -120.0
 offset_top = -200.0
@@ -12929,6 +12936,12 @@ texture = ExtResource("2_1uy0g")
 
 [node name="MC" parent="." instance=ExtResource("3_7qqhx")]
 position = Vector2(47, 211)
+
+[node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("5_1n1om")
+
+[node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("6_kj2pw")
 
 [node name="Enemy1" parent="." instance=ExtResource("4_74ef6")]
 position = Vector2(248, 296)
