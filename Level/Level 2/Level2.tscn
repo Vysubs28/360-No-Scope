@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dsv156meddb2"]
+[gd_scene load_steps=26 format=3 uid="uid://bbm0dovvpic3r"]
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
@@ -90,6 +90,21 @@ point_count = 3
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gfrev"]
 size = Vector2(58.1339, 42.6618)
 
+[sub_resource type="Animation" id="Animation_ag5jb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_h4xyk"]
 resource_name = "new"
 length = 2.0
@@ -107,26 +122,12 @@ tracks/0/keys = {
 "values": [0.0, 1.0]
 }
 
-[sub_resource type="Animation" id="Animation_ag5jb"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("PathFollow2D:progress_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fx0ju"]
 _data = {
 "RESET": SubResource("Animation_ag5jb"),
 "new": SubResource("Animation_h4xyk")
 }
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yffdk"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
@@ -195,6 +196,12 @@ offset_right = 1238.0
 offset_bottom = 777.0
 texture = ExtResource("1_uxmr4")
 
+[node name="Enemy2" parent="TextureRect" instance=ExtResource("8_x1m7g")]
+position = Vector2(535, 340)
+
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy2"]
+stream = ExtResource("7_q33fc")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2oyux")
 format = 2
@@ -219,10 +226,8 @@ polygon = PackedVector2Array(64, -8, 192, -8, 192, 104, 65, 107)
 position = Vector2(-255, -149)
 polygon = PackedVector2Array(265, 163, 377, 163, 368, 656, 272, 656)
 
-[node name="MC" parent="." instance=ExtResource("7_esb6l")]
-position = Vector2(56, 104)
 [node name="MC2" parent="." instance=ExtResource("7_esb6l")]
-position = Vector2(64, 184)
+position = Vector2(62, 100)
 
 [node name="Bullets2" type="Node2D" parent="."]
 position = Vector2(14, 23)
@@ -234,14 +239,13 @@ position = Vector2(184, 552)
 position = Vector2(236, 550)
 
 [node name="trap_3" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(323, 551)
-position = Vector2(191, 516)
-
-[node name="Enemy1" parent="." instance=ExtResource("8_x1m7g")]
-position = Vector2(440, 120)
+position = Vector2(320, 553)
 
 [node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(432, 344)
+
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy2"]
+stream = ExtResource("7_q33fc")
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_uty2j")
@@ -262,22 +266,16 @@ rotation = 1.56333
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(17.0119, -1.89567)
-scale = Vector2(1, 1)
 texture = ExtResource("6_me6a6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(16.9506, -2.40488)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_gfrev")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
 libraries = {
 "": SubResource("AnimationLibrary_fx0ju")
 }
-position = Vector2(295, 196)
-
-[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy2"]
-stream = ExtResource("7_q33fc")
 
 [node name="exit" type="Button" parent="."]
 offset_left = 645.0
@@ -319,8 +317,8 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_i8j5n")
 text = "R
 "
 
+[connection signal="enemy_died" from="TextureRect/Enemy2" to="." method="_on_enemy_2_enemy_died"]
 [connection signal="shoot" from="MC2" to="." method="_on_mc_2_shoot"]
-[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="enemy_died" from="Enemy2" to="." method="_on_enemy_2_enemy_died"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
