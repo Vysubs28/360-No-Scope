@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bmk4o2mugnncj"]
+[gd_scene load_steps=15 format=3 uid="uid://bmk4o2mugnncj"]
 
 [ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_h03hl"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="2_n8nf8"]
 [ext_resource type="Texture2D" uid="uid://b3uivv16pkg3m" path="res://Menu/Medieval.jpg" id="2_q053n"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="4_650t0"]
+[ext_resource type="Texture2D" uid="uid://bymscvy7vm45c" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/audioOn.jpg" id="5_4hlbo"]
+[ext_resource type="Script" path="res://Menu/TextureButton.gd" id="7_uwrt3"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnta0"]
 texture = ExtResource("2_q053n")
@@ -135,5 +137,16 @@ vertical_alignment = 1
 stream = ExtResource("4_650t0")
 autoplay = true
 
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -6.0
+offset_top = -784.0
+offset_right = 674.0
+offset_bottom = -109.0
+toggle_mode = true
+keep_pressed_outside = true
+texture_normal = ExtResource("5_4hlbo")
+script = ExtResource("7_uwrt3")
+
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
