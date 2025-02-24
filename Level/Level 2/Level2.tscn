@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dsv156meddb2"]
+[gd_scene load_steps=26 format=3 uid="uid://bbm0dovvpic3r"]
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
@@ -79,6 +79,53 @@ texture = ExtResource("5_4fjv5")
 [sub_resource type="TileSet" id="TileSet_2oyux"]
 sources/0 = SubResource("TileSetAtlasSource_nvntn")
 
+[sub_resource type="Curve2D" id="Curve2D_uty2j"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 352, 395, 0, 0, 0, 0, 351, 233, 0, 0, 0, 0, 352, 386)
+}
+point_count = 3
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfrev"]
+size = Vector2(58.1339, 42.6618)
+
+[sub_resource type="Animation" id="Animation_ag5jb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_h4xyk"]
+resource_name = "new"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fx0ju"]
+_data = {
+"RESET": SubResource("Animation_ag5jb"),
+"new": SubResource("Animation_h4xyk")
+}
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yffdk"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
@@ -147,6 +194,12 @@ offset_right = 1214.0
 offset_bottom = 793.0
 texture = ExtResource("1_uxmr4")
 
+[node name="Enemy2" parent="TextureRect" instance=ExtResource("8_x1m7g")]
+position = Vector2(535, 340)
+
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy2"]
+stream = ExtResource("7_q33fc")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2oyux")
 format = 2
@@ -170,22 +223,55 @@ scale = Vector2(1, 0.673611)
 polygon = PackedVector2Array(8, 320.66, 121, 323, 121, 395, 9, 395)
 
 [node name="MC2" parent="." instance=ExtResource("7_esb6l")]
-position = Vector2(64, 184)
+position = Vector2(62, 100)
 
 [node name="Bullets2" type="Node2D" parent="."]
 position = Vector2(14, 23)
 
 [node name="trap_1" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(191, 516)
+position = Vector2(184, 552)
 
-[node name="Enemy1" parent="." instance=ExtResource("8_x1m7g")]
-position = Vector2(48, 376)
+[node name="trap_2" parent="." instance=ExtResource("9_pfwbr")]
+position = Vector2(236, 550)
+
+[node name="trap_3" parent="." instance=ExtResource("9_pfwbr")]
+position = Vector2(320, 553)
 
 [node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
-position = Vector2(295, 196)
+position = Vector2(432, 344)
 
 [node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy2"]
 stream = ExtResource("7_q33fc")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_uty2j")
+script = ExtResource("6_aipob")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(351.452, 306.159)
+rotation = 1.56333
+progress = 88.8421
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
+position = Vector2(351.452, 306.159)
+rotation = 1.56333
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
+position = Vector2(17.0119, -1.89567)
+texture = ExtResource("6_me6a6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
+position = Vector2(16.9506, -2.40488)
+shape = SubResource("RectangleShape2D_gfrev")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
+libraries = {
+"": SubResource("AnimationLibrary_fx0ju")
+}
 
 [node name="exit" type="Button" parent="."]
 offset_left = 645.0
@@ -227,8 +313,8 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_i8j5n")
 text = "R
 "
 
+[connection signal="enemy_died" from="TextureRect/Enemy2" to="." method="_on_enemy_2_enemy_died"]
 [connection signal="shoot" from="MC2" to="." method="_on_mc_2_shoot"]
-[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="enemy_died" from="Enemy2" to="." method="_on_enemy_2_enemy_died"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
