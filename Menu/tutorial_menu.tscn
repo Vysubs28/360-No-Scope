@@ -41,6 +41,10 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 position = Vector2(559, 292)
 script = ExtResource("1_3mwhx")
 
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_h8e84")
+volume_db = -26.0
+
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
@@ -89,10 +93,6 @@ theme_override_font_sizes/font_size = 81
 text = "Tutorial"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Main_MenuMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_h8e84")
-autoplay = true
 
 [node name="Button Steps" type="Label" parent="."]
 offset_left = -337.0
