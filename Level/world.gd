@@ -10,8 +10,6 @@ extends Node2D
 const bullet_scene: PackedScene = preload("res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn")
 
 func _ready():
-	polygon_2d.polygon = collision_polygon_2d.polygon
-	polygon_2d2.polygon = collision_polygon_2d2.polygon
 	level_music.play()
 
  

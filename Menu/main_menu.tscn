@@ -135,7 +135,6 @@ vertical_alignment = 1
 stream = ExtResource("4_650t0")
 volume_db = -20.0
 autoplay = true
-stream_paused = true
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/levels" to="." method="_on_levels_pressed"]
