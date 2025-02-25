@@ -1,16 +1,18 @@
-[gd_scene load_steps=28 format=3 uid="uid://w5su4avq3it"]
+[gd_scene load_steps=30 format=3 uid="uid://w5su4avq3it"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="3_bfk64"]
-[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="4_sqkjr"]
-[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="5_bgna6"]
+[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_11.png" id="4_sqkjr"]
+[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_06.png" id="5_bgna6"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="6_d32gn"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="6_eonhs"]
-[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="6_ppoq6"]
-[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="7_redbd"]
+[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Grass_02.png" id="6_ppoq6"]
+[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Decor_Plant.png" id="7_redbd"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="8_win8d"]
+[ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="9_m2vsa"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="10_51hpb"]
+[ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="10_x2nuw"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="11_m7f47"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="12_8jsij"]
 
@@ -12667,6 +12669,10 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 position = Vector2(3, 31)
 script = ExtResource("1_midfu")
 
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_8jsij")
+volume_db = -26.0
+
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -106.0
 offset_top = -213.0
@@ -12702,6 +12708,12 @@ layer_0/tile_data = PackedInt32Array(524308, 1, 0, 589844, 1, 1, 655380, 0, 0, 7
 
 [node name="MC" parent="." instance=ExtResource("6_eonhs")]
 position = Vector2(47, 211)
+
+[node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("9_m2vsa")
+
+[node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("10_x2nuw")
 
 [node name="Enemy1" parent="." instance=ExtResource("6_d32gn")]
 position = Vector2(297, 323)
@@ -12753,9 +12765,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_qhvl8")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_22ult")
 text = "R
 "
-
-[node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("12_8jsij")
 
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]

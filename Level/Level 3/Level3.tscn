@@ -1,27 +1,29 @@
-[gd_scene load_steps=50 format=3 uid="uid://12y26jx8744u"]
+[gd_scene load_steps=52 format=3 uid="uid://12y26jx8744u"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="4_47nb4"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
-[ext_resource type="Texture2D" uid="uid://clup3ngiefxjr" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_07.png" id="5_3dtkx"]
+[ext_resource type="Texture2D" uid="uid://clup3ngiefxjr" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground-Additional_07.png" id="5_3dtkx"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="5_bmyfd"]
-[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="6_46b0x"]
-[ext_resource type="Texture2D" uid="uid://weescsnd3w7t" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_05.png" id="6_x5t5p"]
-[ext_resource type="Texture2D" uid="uid://cfd85l2hjyvee" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_04.png" id="7_qiqg1"]
-[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="7_thmvv"]
-[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="8_gxibo"]
-[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="8_yropm"]
-[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="9_1brlo"]
-[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="9_qe4ba"]
-[ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Fence.png" id="10_0q55a"]
-[ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="10_8xvns"]
-[ext_resource type="Texture2D" uid="uid://cfcy7nltird6v" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_01.png" id="11_e0t18"]
-[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="11_tmqum"]
-[ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="11_v8lqw"]
+[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_11.png" id="6_46b0x"]
+[ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="6_twvl2"]
+[ext_resource type="Texture2D" uid="uid://weescsnd3w7t" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground-Additional_05.png" id="6_x5t5p"]
+[ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="7_e5om0"]
+[ext_resource type="Texture2D" uid="uid://cfd85l2hjyvee" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground-Additional_04.png" id="7_qiqg1"]
+[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_06.png" id="7_thmvv"]
+[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Grass_02.png" id="8_gxibo"]
+[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Brick_01.png" id="8_yropm"]
+[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Decor_Plant.png" id="9_1brlo"]
+[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_01.png" id="9_qe4ba"]
+[ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Fence.png" id="10_0q55a"]
+[ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Decor_Brick.png" id="10_8xvns"]
+[ext_resource type="Texture2D" uid="uid://cfcy7nltird6v" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Grass_01.png" id="11_e0t18"]
+[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Rock_05.png" id="11_tmqum"]
+[ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_02.png" id="11_v8lqw"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_bjh57"]
-[ext_resource type="Texture2D" uid="uid://cbiboyndsrnhx" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_07.png" id="12_c66mw"]
+[ext_resource type="Texture2D" uid="uid://cbiboyndsrnhx" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Ground_07.png" id="12_c66mw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("5_bmyfd")
@@ -16133,6 +16135,8 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_gql3o")
 
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -152.0
 offset_top = -208.0
@@ -16148,6 +16152,12 @@ stream = ExtResource("4_47nb4")
 
 [node name="MC" parent="." instance=ExtResource("3_7qqhx")]
 position = Vector2(48, 128)
+
+[node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("6_twvl2")
+
+[node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("7_e5om0")
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2

@@ -2,10 +2,12 @@ extends CharacterBody2D
 
 
 @export var speed : float =  200.0
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -350.0
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
 @onready var Death_sfx = $Death_sfx
+@onready var sfx_jump = $sfx_jump
+@onready var sfx_bow = $sfx_bow
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -33,11 +35,13 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("spin"): 
 		if is_on_floor():
 			spin()
+			sfx_jump.play()
 			
 	if Input.is_action_just_pressed("shoot") and can_shoot and not flying:
 		shoot.emit(global_position)
 		can_shoot = false
 		$CooldownTimer.start()
+		sfx_bow.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
