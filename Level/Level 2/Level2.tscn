@@ -1,14 +1,17 @@
-[gd_scene load_steps=26 format=3 uid="uid://bbm0dovvpic3r"]
+[gd_scene load_steps=29 format=3 uid="uid://bbm0dovvpic3r"]
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
-[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="5_4fjv5"]
+[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_sqsru"]
+[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Brick_01.png" id="5_4fjv5"]
 [ext_resource type="Script" path="res://Level/Level 2/movingobstacle.gd" id="6_aipob"]
-[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="6_me6a6"]
+[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Rock_05.png" id="6_me6a6"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="7_esb6l"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="7_q33fc"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="7_v0nh1"]
+[ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="8_1pt87"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="8_x1m7g"]
+[ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="9_4nsk6"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="9_pfwbr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nvntn"]
@@ -189,6 +192,10 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_d6x24")
 
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_sqsru")
+volume_db = -26.0
+
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -96.0
 offset_top = -216.0
@@ -229,6 +236,12 @@ polygon = PackedVector2Array(265, 163, 377, 163, 368, 656, 272, 656)
 [node name="MC2" parent="." instance=ExtResource("7_esb6l")]
 position = Vector2(62, 100)
 
+[node name="sfx_bow" type="AudioStreamPlayer" parent="MC2"]
+stream = ExtResource("8_1pt87")
+
+[node name="sfx_jump" type="AudioStreamPlayer" parent="MC2"]
+stream = ExtResource("9_4nsk6")
+
 [node name="Bullets2" type="Node2D" parent="."]
 position = Vector2(14, 23)
 
@@ -263,6 +276,7 @@ remote_path = NodePath("../../AnimatableBody2D")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
 position = Vector2(351.452, 306.159)
 rotation = 1.56333
+scale = Vector2(1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(17.0119, -1.89567)

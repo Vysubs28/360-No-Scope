@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cndacdvmx3xve"
+path="res://.godot/imported/jump-sound-14839-[AudioTrimmer.com].mp3-1af9b7aa9fa7463c7289e8fadaf85d80.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3"
+dest_files=["res://.godot/imported/jump-sound-14839-[AudioTrimmer.com].mp3-1af9b7aa9fa7463c7289e8fadaf85d80.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
