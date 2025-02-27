@@ -1,7 +1,7 @@
 [gd_scene load_steps=52 format=3 uid="uid://ccru58nrugvf5"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_aeiri"]
-[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_v5hqi"]
+[ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_ny4c5"]
 [ext_resource type="Texture2D" uid="uid://cspqi2bjdol6o" path="res://Assets/Rockstar Studios/New Background Assets/New folder/PNG/Cartoon_Forest_BG_02/Layers/Sky.png" id="3_ak6ib"]
 [ext_resource type="Texture2D" uid="uid://dcvjfdqvghm2v" path="res://Assets/Rockstar Studios/New Background Assets/New folder/PNG/Cartoon_Forest_BG_02/Layers/Foreground.png" id="4_ag6o0"]
 [ext_resource type="Texture2D" uid="uid://c1khxhqyw36pv" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Wooden_Box.png" id="4_rh0bx"]
@@ -3106,7 +3106,7 @@ position = Vector2(3, 31)
 script = ExtResource("1_aeiri")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_v5hqi")
+stream = ExtResource("2_ny4c5")
 volume_db = -26.0
 
 [node name="TextureRect" type="TextureRect" parent="."]

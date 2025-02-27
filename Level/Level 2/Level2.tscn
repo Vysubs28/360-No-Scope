@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
-[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_sqsru"]
+[ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_rfkl4"]
 [ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="5_4fjv5"]
 [ext_resource type="Script" path="res://Level/Level 2/movingobstacle.gd" id="6_aipob"]
 [ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="6_me6a6"]
@@ -193,7 +193,7 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 script = ExtResource("1_d6x24")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sqsru")
+stream = ExtResource("2_rfkl4")
 volume_db = -26.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -203,10 +203,10 @@ offset_right = 1238.0
 offset_bottom = 777.0
 texture = ExtResource("1_uxmr4")
 
-[node name="Enemy2" parent="TextureRect" instance=ExtResource("8_x1m7g")]
+[node name="Enemy1" parent="TextureRect" instance=ExtResource("8_x1m7g")]
 position = Vector2(535, 340)
 
-[node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy2"]
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy1"]
 stream = ExtResource("7_q33fc")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -276,6 +276,7 @@ remote_path = NodePath("../../AnimatableBody2D")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D" groups=["block"]]
 position = Vector2(351.452, 306.159)
 rotation = 1.56333
+scale = Vector2(1, 1)
 collision_mask = 18
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
@@ -331,7 +332,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_i8j5n")
 text = "R
 "
 
-[connection signal="enemy_died" from="TextureRect/Enemy2" to="." method="_on_enemy_2_enemy_died"]
+[connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="shoot" from="MC2" to="." method="_on_mc_2_shoot"]
 [connection signal="enemy_died" from="Enemy2" to="." method="_on_enemy_2_enemy_died"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

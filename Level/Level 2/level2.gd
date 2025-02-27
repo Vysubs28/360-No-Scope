@@ -28,11 +28,18 @@ func _on_mc_2_shoot(pos):
 
 
 func _on_enemy_1_enemy_died():
-	print("We got to the signal")
-	enemies -= 1
-
+	var player = get_node("MC2")
+	if player:
+		player.fly()
+		get_tree().change_scene_to_file("res://LevelMenu/NextLevel2.tscn")
+	else:
+		print("found an error")
+	
 
 func _on_enemy_2_enemy_died():
-	enemies -= 1
-	print("we got to the second signal")
-	
+	var player = get_node("MC2")
+	if player:
+		player.fly()
+		get_tree().change_scene_to_file("res://LevelMenu/NextLevel2.tscn")
+	else:
+		print("found an error")

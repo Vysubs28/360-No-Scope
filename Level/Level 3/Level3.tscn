@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
-[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_42g8f"]
+[ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_sdsb4"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="4_47nb4"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
@@ -16137,7 +16137,7 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 script = ExtResource("1_gql3o")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_42g8f")
+stream = ExtResource("2_sdsb4")
 volume_db = -26.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -16147,19 +16147,19 @@ offset_right = 1182.0
 offset_bottom = 785.0
 texture = ExtResource("2_1uy0g")
 
-[node name="Enemy2" parent="TextureRect" instance=ExtResource("4_74ef6")]
+[node name="Enemy1" parent="TextureRect" instance=ExtResource("4_74ef6")]
 position = Vector2(668, 538)
 
-[node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy2"]
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy1"]
 stream = ExtResource("4_47nb4")
 
-[node name="MC" parent="." instance=ExtResource("3_7qqhx")]
+[node name="MC3" parent="." instance=ExtResource("3_7qqhx")]
 position = Vector2(48, 128)
 
-[node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
+[node name="sfx_bow" type="AudioStreamPlayer" parent="MC3"]
 stream = ExtResource("6_twvl2")
 
-[node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
+[node name="sfx_jump" type="AudioStreamPlayer" parent="MC3"]
 stream = ExtResource("7_e5om0")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -16234,6 +16234,7 @@ text = "R
 
 [node name="Bullets2" type="Node" parent="."]
 
-[connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
+[connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
+[connection signal="shoot" from="MC3" to="." method="_on_mc_shoot"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
