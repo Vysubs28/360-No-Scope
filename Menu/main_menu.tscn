@@ -64,6 +64,10 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 position = Vector2(559, 292)
 script = ExtResource("1_h03hl")
 
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_650t0")
+volume_db = -26.0
+
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 8
 anchor_left = 0.5

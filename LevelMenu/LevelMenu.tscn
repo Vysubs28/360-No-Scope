@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://bp37jjmu7v8w4"]
+[gd_scene load_steps=13 format=3 uid="uid://bp37jjmu7v8w4"]
 
 [ext_resource type="Script" path="res://LevelMenu/LevelMenu.gd" id="1_fgpqf"]
 [ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="2_4d07r"]
+[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_wwurb"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="3_qb871"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
@@ -56,6 +57,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fgpqf")
+
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wwurb")
+volume_db = -26.0
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -147,7 +152,28 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
 text = "4
 "
 
+[node name="Level5" type="Button" parent="."]
+layout_mode = 2
+offset_left = 562.0
+offset_top = 27.0
+offset_right = 629.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_font_sizes/font_size = 63
+theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
+text = "5"
+
 [connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="Level5" to="." method="_on_level_5_pressed"]

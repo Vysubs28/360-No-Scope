@@ -1,9 +1,11 @@
 extends Node2D
 
+@onready var level_music = $Level_Music
+
 const bullet_scene: PackedScene = preload("res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	level_music.play()
 
 
 
