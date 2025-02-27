@@ -12715,12 +12715,6 @@ stream = ExtResource("9_m2vsa")
 [node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
 stream = ExtResource("10_x2nuw")
 
-[node name="Enemy1" parent="." instance=ExtResource("6_d32gn")]
-position = Vector2(297, 323)
-
-[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1"]
-stream = ExtResource("10_51hpb")
-
 [node name="trap_1" parent="." instance=ExtResource("8_win8d")]
 position = Vector2(190, 497)
 
@@ -12766,7 +12760,13 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_22ult")
 text = "R
 "
 
+[node name="Enemy1" parent="." instance=ExtResource("6_d32gn")]
+position = Vector2(288, 309)
+
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1"]
+stream = ExtResource("10_51hpb")
+
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
-[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]

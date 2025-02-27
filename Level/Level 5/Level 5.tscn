@@ -3210,22 +3210,22 @@ polygon = PackedVector2Array(511, -163, 512, -32, 641, -32)
 [node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(1014, -63, 1014, 31, 1132, 28, 1132, -66)
 
-[node name="MC" parent="." instance=ExtResource("9_r5166")]
+[node name="MC5" parent="." instance=ExtResource("9_r5166")]
 position = Vector2(91, 330)
 
-[node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
+[node name="sfx_jump" type="AudioStreamPlayer" parent="MC5"]
 stream = ExtResource("10_jn6q4")
 
-[node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
+[node name="sfx_bow" type="AudioStreamPlayer" parent="MC5"]
 stream = ExtResource("11_lagtk")
 
-[node name="Camera2D" type="Camera2D" parent="MC"]
+[node name="Camera2D" type="Camera2D" parent="MC5"]
 position_smoothing_enabled = true
 
-[node name="Enemy1" parent="." instance=ExtResource("12_vvdwy")]
+[node name="Enemy1_5" parent="." instance=ExtResource("12_vvdwy")]
 position = Vector2(1186, 0)
 
-[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1"]
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1_5"]
 stream = ExtResource("13_sdhot")
 
 [node name="trap_1" parent="." instance=ExtResource("14_8vx34")]
@@ -3306,7 +3306,7 @@ text = "R
 "
 metadata/_edit_use_anchors_ = true
 
-[connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
-[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
+[connection signal="shoot" from="MC5" to="." method="_on_mc_shoot"]
+[connection signal="enemy_died" from="Enemy1_5" to="." method="_on_enemy_1_5_enemy_died"]
 [connection signal="pressed" from="CanvasLayer/exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="CanvasLayer/restart" to="." method="_on_restart_pressed"]
