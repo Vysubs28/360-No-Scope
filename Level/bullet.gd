@@ -3,14 +3,28 @@ extends CharacterBody2D
 @export var speed := 450
 
 var direction = Vector2(1,0)
+var bounced = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func change_direction():
+	if (bounced == 3):
+		queue_free()
 	print("Hit a wall")
 	direction *= -1
 	$Arrow.scale.x *= -1
+	bounced += 1
 func bounce(x_angle, y_angle):
 	print("bouncing")
-	direction = Vector2(x_angle, y_angle).normalized()
+	if (bounced == 3):
+		queue_free()
+	if (x_angle < 0 && y_angle > 0):
+		direction = Vector2(0, 1).normalized()
+	elif(x_angle < 0 && y_angle < 0): 
+		direction = Vector2(0, -1).normalized()
+	elif(x_angle > 0 && y_angle < 0):
+		direction = Vector2(1, 0).normalized()
+	elif(x_angle > 0 && y_angle > 0): 
+		direction = Vector2(-1, 0).normalized()
+	bounced += 1
 	$Arrow.rotation = direction.angle()
 	
 
@@ -26,7 +40,7 @@ func _physics_process(delta):
 			queue_free()
 		elif hit_body.is_in_group("walls"):
 			print(normal)
-			if normal.y != 0:
+			if normal.y > .1 or normal.y < -.1:
 				var x_angle = normal.x
 				var y_angle = normal.y
 				bounce(x_angle, y_angle)
@@ -34,3 +48,6 @@ func _physics_process(delta):
 				change_direction()
 		elif hit_body is TileMap:
 			change_direction()
+		elif hit_body.is_in_group("block"):
+			queue_free()
+			print("arrow destroyed")

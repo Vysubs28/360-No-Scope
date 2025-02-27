@@ -260,9 +260,10 @@ rotates = false
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../AnimatableBody2D")
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D" groups=["block"]]
 position = Vector2(351.452, 306.159)
 rotation = 1.56333
+collision_mask = 18
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(17.0119, -1.89567)

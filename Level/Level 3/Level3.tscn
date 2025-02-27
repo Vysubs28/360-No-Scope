@@ -16175,7 +16175,7 @@ position = Vector2(-24, -48)
 scale = Vector2(1.34821, 1.30357)
 polygon = PackedVector2Array(480.636, 55.2329, 397.563, 55.2329, 367.894, 85.9178, 367.894, 135.014, 480.636, 251.616)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" groups=["block"]]
 position = Vector2(448, 314.25)
 shape = SubResource("RectangleShape2D_ri6x7")
 
