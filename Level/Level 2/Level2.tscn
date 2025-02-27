@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_sqsru"]
-[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Game Music/PNG/Platformer/Brick_01.png" id="5_4fjv5"]
+[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="5_4fjv5"]
 [ext_resource type="Script" path="res://Level/Level 2/movingobstacle.gd" id="6_aipob"]
-[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Game Music/PNG/Environment/Rock_05.png" id="6_me6a6"]
+[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="6_me6a6"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="7_esb6l"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="7_q33fc"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="7_v0nh1"]
@@ -277,7 +277,6 @@ remote_path = NodePath("../../AnimatableBody2D")
 position = Vector2(351.452, 306.159)
 rotation = 1.56333
 collision_mask = 18
-scale = Vector2(1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(17.0119, -1.89567)
