@@ -247,7 +247,7 @@ sources/1 = SubResource("TileSetAtlasSource_eqmm3")
 sources/2 = SubResource("TileSetAtlasSource_krybq")
 sources/3 = SubResource("TileSetAtlasSource_5slci")
 
-[node name="World" type="Node2D"]
+[node name="World2" type="Node2D"]
 position = Vector2(3, 31)
 script = ExtResource("1_3fqs3")
 

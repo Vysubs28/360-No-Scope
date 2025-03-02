@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=34 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
@@ -12,6 +12,17 @@
 [ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="6_efx1c"]
 [ext_resource type="AudioStream" uid="uid://be0q3dukfe7o7" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/alien-monster-scream-259962.mp3" id="8_6t1pp"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="8_kce8e"]
+[ext_resource type="Script" path="res://Level/Level 3/Path2D.gd" id="13_un7ec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbi0u"]
+size = Vector2(128, 336)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0an60"]
+a = Vector2(544, 72)
+b = Vector2(360, 264)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qjpr"]
+size = Vector2(208, 114)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wu8xi"]
 texture = ExtResource("4_jj1te")
@@ -256,6 +267,53 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pelh5"]
 
+[sub_resource type="Curve2D" id="Curve2D_yq8vr"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 368, 216, 0, 0, 0, 0, 488, 96)
+}
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hc86r"]
+size = Vector2(51.4453, 77.8292)
+
+[sub_resource type="Animation" id="Animation_xipup"]
+resource_name = "Enemy_Walking"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_jli0k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iwh71"]
+_data = {
+"Enemy_Walking": SubResource("Animation_xipup"),
+"RESET": SubResource("Animation_jli0k")
+}
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ibr02")
 
@@ -272,13 +330,20 @@ texture = ExtResource("1_rhd7h")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(-1, -4)
-polygon = PackedVector2Array(32, 32, 160, 32, 192, 384, 0, 384)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(96, 200)
+shape = SubResource("RectangleShape2D_pbi0u")
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(128, 24)
-polygon = PackedVector2Array(416, 40, 294, 166, 296, 360, 416, 360)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("SegmentShape2D_0an60")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(464, 320)
+shape = SubResource("RectangleShape2D_1qjpr")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(560, 232)
+polygon = PackedVector2Array(0, 32, -200, 32, 8, -184, 8, 32)
 
 [node name="MC" parent="." instance=ExtResource("2_bmnu1")]
 position = Vector2(97, 41)
@@ -288,14 +353,6 @@ stream = ExtResource("5_n6ofm")
 
 [node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
 stream = ExtResource("6_efx1c")
-
-[node name="Enemy1" parent="." instance=ExtResource("3_7f6ab")]
-position = Vector2(432, 104)
-
-[node name="Death_sfx" type="AudioStreamPlayer" parent="Enemy1"]
-stream = ExtResource("8_6t1pp")
-volume_db = -0.455
-pitch_scale = 0.81
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ky66s")
@@ -344,7 +401,41 @@ text = "R
 
 [node name="Bullets2" type="Node" parent="."]
 
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_yq8vr")
+script = ExtResource("13_un7ec")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(393.991, 190.009)
+rotation = -0.785398
+progress = 36.7654
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
+position = Vector2(393.991, 190.009)
+rotation = -0.785398
+scale = Vector2(1, 1)
+
+[node name="Enemy1" parent="Path2D/AnimatableBody2D" instance=ExtResource("3_7f6ab")]
+position = Vector2(3.05176e-05, 1.52588e-05)
+
+[node name="Death_sfx" type="AudioStreamPlayer" parent="Path2D/AnimatableBody2D/Enemy1"]
+stream = ExtResource("8_6t1pp")
+volume_db = -0.455
+pitch_scale = 0.81
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
+position = Vector2(10.3593, -21.6492)
+shape = SubResource("RectangleShape2D_hc86r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
+libraries = {
+"": SubResource("AnimationLibrary_iwh71")
+}
+
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
-[connection signal="enemy_died" from="Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="enemy_died" from="Path2D/AnimatableBody2D/Enemy1" to="." method="_on_enemy_1_enemy_died"]
