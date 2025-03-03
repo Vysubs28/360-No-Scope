@@ -22,6 +22,8 @@ signal shoot(pos: Vector2)
 
 
 func _physics_process(delta):
+	if(Input.is_action_just_released("restart")):
+		get_tree().reload_current_scene()
 	if (not dead):# Add the gravity.
 		if(not flying):
 			if not is_on_floor():
@@ -93,7 +95,7 @@ func killMC():
 	Death_sfx.play()
 	await animated_sprite.animation_finished
 	queue_free()
-	
+	get_tree().reload_current_scene()
 
 func fly():
 	if not dead:
