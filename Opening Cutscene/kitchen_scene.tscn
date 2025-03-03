@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dointxah0m3rd"]
+
+[ext_resource type="Texture2D" uid="uid://b8tmgd8cgfc3r" path="res://Assets/Rockstar Studios/Cut Scene Animation Characters/Assets/[Free-Version] The Lost Tomb - [24x24] Dungeon Asset pack/kitchen interior background 3.png" id="1_sthsc"]
+
+[sub_resource type="TileSet" id="TileSet_wv05s"]
+physics_layer_0/collision_layer = 1
+
+[node name="kitchen_scene" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_sthsc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+[node name="TileMap" type="TileMap" parent="StaticBody2D"]
+tile_set = SubResource("TileSet_wv05s")
+format = 2
