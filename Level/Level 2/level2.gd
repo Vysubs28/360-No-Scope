@@ -18,10 +18,6 @@ func _on_restart_pressed():
 	enemies = 2
 	get_tree().reload_current_scene()
 
-
-
-
-
 func _on_mc_2_shoot(pos):
 	var bullet = bullet_scene.instantiate()
 	$Bullets2.add_child(bullet)

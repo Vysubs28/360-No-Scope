@@ -3232,13 +3232,13 @@ stream = ExtResource("13_sdhot")
 position = Vector2(296, 501)
 
 [node name="trap_9" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(1331, 501)
+position = Vector2(1342, 500)
 
 [node name="trap_8" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(1199, 501)
+position = Vector2(1209, 501)
 
 [node name="trap_7" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(1070, 501)
+position = Vector2(1075, 501)
 
 [node name="trap_5" parent="." instance=ExtResource("14_8vx34")]
 position = Vector2(684, 501)
@@ -3247,7 +3247,7 @@ position = Vector2(684, 501)
 position = Vector2(424, 503)
 
 [node name="trap_2" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(941, 501)
+position = Vector2(943, 500)
 
 [node name="trap_3" parent="." instance=ExtResource("14_8vx34")]
 position = Vector2(813, 501)
