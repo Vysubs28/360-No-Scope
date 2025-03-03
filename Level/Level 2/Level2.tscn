@@ -248,11 +248,8 @@ position = Vector2(14, 23)
 [node name="trap_1" parent="." instance=ExtResource("9_pfwbr")]
 position = Vector2(184, 552)
 
-[node name="trap_2" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(236, 550)
-
 [node name="trap_3" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(320, 553)
+position = Vector2(316, 552)
 
 [node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(432, 344)
@@ -265,9 +262,8 @@ curve = SubResource("Curve2D_uty2j")
 script = ExtResource("6_aipob")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(351.452, 306.159)
+position = Vector2(352, 395)
 rotation = 1.56333
-progress = 88.8421
 rotates = false
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]

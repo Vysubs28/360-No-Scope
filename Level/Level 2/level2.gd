@@ -10,15 +10,13 @@ func _ready():
 
 
 func _on_exit_pressed():
+	enemies = 2
 	get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
 
 
 func _on_restart_pressed():
+	enemies = 2
 	get_tree().reload_current_scene()
-
-
-
-
 
 func _on_mc_2_shoot(pos):
 	var bullet = bullet_scene.instantiate()
@@ -29,16 +27,13 @@ func _on_mc_2_shoot(pos):
 
 func _on_enemy_1_enemy_died():
 	var player = get_node("MC2")
-	if player:
-		player.fly()
-		get_tree().change_scene_to_file("res://LevelMenu/NextLevel2.tscn")
-	else:
-		print("found an error")
+	enemies -= 1
 	
 
 func _on_enemy_2_enemy_died():
 	var player = get_node("MC2")
-	if player:
+	enemies -= 1
+	if player and enemies == 0:
 		player.fly()
 		get_tree().change_scene_to_file("res://LevelMenu/NextLevel2.tscn")
 	else:

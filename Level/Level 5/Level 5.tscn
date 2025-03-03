@@ -1,6 +1,6 @@
 [gd_scene load_steps=52 format=3 uid="uid://ccru58nrugvf5"]
 
-[ext_resource type="Script" path="res://Level/world.gd" id="1_aeiri"]
+[ext_resource type="Script" path="res://Level/Level 5/Level 5.gd" id="1_mwgjk"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_ny4c5"]
 [ext_resource type="Texture2D" uid="uid://cspqi2bjdol6o" path="res://Assets/Rockstar Studios/New Background Assets/New folder/PNG/Cartoon_Forest_BG_02/Layers/Sky.png" id="3_ak6ib"]
 [ext_resource type="Texture2D" uid="uid://dcvjfdqvghm2v" path="res://Assets/Rockstar Studios/New Background Assets/New folder/PNG/Cartoon_Forest_BG_02/Layers/Foreground.png" id="4_ag6o0"]
@@ -3101,9 +3101,9 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22ult"]
 
-[node name="World" type="Node2D"]
+[node name="Level5" type="Node2D"]
 position = Vector2(3, 31)
-script = ExtResource("1_aeiri")
+script = ExtResource("1_mwgjk")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_ny4c5")
@@ -3222,23 +3222,23 @@ stream = ExtResource("11_lagtk")
 [node name="Camera2D" type="Camera2D" parent="MC5"]
 position_smoothing_enabled = true
 
-[node name="Enemy1_5" parent="." instance=ExtResource("12_vvdwy")]
+[node name="enemy_1" parent="." instance=ExtResource("12_vvdwy")]
 position = Vector2(1186, 0)
 
-[node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1_5"]
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="enemy_1"]
 stream = ExtResource("13_sdhot")
 
 [node name="trap_1" parent="." instance=ExtResource("14_8vx34")]
 position = Vector2(296, 501)
 
 [node name="trap_9" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(1331, 501)
+position = Vector2(1342, 500)
 
 [node name="trap_8" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(1199, 501)
+position = Vector2(1209, 501)
 
 [node name="trap_7" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(1070, 501)
+position = Vector2(1075, 501)
 
 [node name="trap_5" parent="." instance=ExtResource("14_8vx34")]
 position = Vector2(684, 501)
@@ -3247,7 +3247,7 @@ position = Vector2(684, 501)
 position = Vector2(424, 503)
 
 [node name="trap_2" parent="." instance=ExtResource("14_8vx34")]
-position = Vector2(941, 501)
+position = Vector2(943, 500)
 
 [node name="trap_3" parent="." instance=ExtResource("14_8vx34")]
 position = Vector2(813, 501)
@@ -3307,6 +3307,6 @@ text = "R
 metadata/_edit_use_anchors_ = true
 
 [connection signal="shoot" from="MC5" to="." method="_on_mc_shoot"]
-[connection signal="enemy_died" from="Enemy1_5" to="." method="_on_enemy_1_5_enemy_died"]
+[connection signal="enemy_died" from="enemy_1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="pressed" from="CanvasLayer/exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="CanvasLayer/restart" to="." method="_on_restart_pressed"]
