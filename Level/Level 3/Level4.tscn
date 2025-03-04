@@ -1,18 +1,17 @@
-[gd_scene load_steps=34 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=33 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="2_bmnu1"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_wfldx"]
-[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="3_7f6ab"]
 [ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="4_jj1te"]
 [ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="5_n6ofm"]
 [ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="5_y27ul"]
 [ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="6_diu0v"]
 [ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="6_efx1c"]
-[ext_resource type="AudioStream" uid="uid://be0q3dukfe7o7" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/alien-monster-scream-259962.mp3" id="8_6t1pp"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="8_kce8e"]
 [ext_resource type="Script" path="res://Level/Level 3/Path2D.gd" id="13_un7ec"]
+[ext_resource type="PackedScene" uid="uid://cwcktb0bbw6yt" path="res://Assets/Rockstar Studios/Kill them all!/orc.tscn" id="14_68ley"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbi0u"]
 size = Vector2(128, 336)
@@ -406,28 +405,24 @@ curve = SubResource("Curve2D_yq8vr")
 script = ExtResource("13_un7ec")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(393.991, 190.009)
+position = Vector2(368, 216)
 rotation = -0.785398
-progress = 36.7654
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../AnimatableBody2D")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
-position = Vector2(393.991, 190.009)
+position = Vector2(368, 216)
 rotation = -0.785398
 scale = Vector2(1, 1)
 
-[node name="Enemy1" parent="Path2D/AnimatableBody2D" instance=ExtResource("3_7f6ab")]
-position = Vector2(3.05176e-05, 1.52588e-05)
-
-[node name="Death_sfx" type="AudioStreamPlayer" parent="Path2D/AnimatableBody2D/Enemy1"]
-stream = ExtResource("8_6t1pp")
-volume_db = -0.455
-pitch_scale = 0.81
+[node name="enemy2" parent="Path2D/AnimatableBody2D" instance=ExtResource("14_68ley")]
+position = Vector2(13.2292, -8.81943)
+scale = Vector2(1.41341, 1.27137)
+autoplay = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
-position = Vector2(10.3593, -21.6492)
+position = Vector2(14.8622, -19.0919)
 shape = SubResource("RectangleShape2D_hc86r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
@@ -435,7 +430,8 @@ libraries = {
 "": SubResource("AnimationLibrary_iwh71")
 }
 
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("14_68ley")]
+
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
-[connection signal="enemy_died" from="Path2D/AnimatableBody2D/Enemy1" to="." method="_on_enemy_1_enemy_died"]

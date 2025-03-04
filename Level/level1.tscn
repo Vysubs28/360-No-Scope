@@ -1,10 +1,11 @@
-[gd_scene load_steps=30 format=3 uid="uid://w5su4avq3it"]
+[gd_scene load_steps=31 format=3 uid="uid://w5su4avq3it"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_76t14"]
 [ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="2_mfjbj"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="3_bfk64"]
 [ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="4_sqkjr"]
+[ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="4_vrh8m"]
 [ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="5_bgna6"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="6_d32gn"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="6_eonhs"]
@@ -12679,6 +12680,8 @@ offset_top = -213.0
 offset_right = 1228.0
 offset_bottom = 537.0
 texture = ExtResource("3_bfk64")
+
+[node name="Area2D" parent="." instance=ExtResource("4_vrh8m")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
 position = Vector2(-1, 69)

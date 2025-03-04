@@ -246,10 +246,10 @@ stream = ExtResource("9_4nsk6")
 position = Vector2(14, 23)
 
 [node name="trap_1" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(189, 552)
+position = Vector2(186, 560)
 
 [node name="trap_3" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(323, 551)
+position = Vector2(326, 557)
 
 [node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(432, 344)
