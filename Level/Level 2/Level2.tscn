@@ -219,7 +219,7 @@ position = Vector2(-1, 69)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(321, 307)
-polygon = PackedVector2Array(64, -8, 192, -8, 184, 200, 72, 200)
+polygon = PackedVector2Array(73, -11, 192, -8, 184, 200, 72, 200)
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D3"]
 
@@ -246,10 +246,10 @@ stream = ExtResource("9_4nsk6")
 position = Vector2(14, 23)
 
 [node name="trap_1" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(184, 552)
+position = Vector2(189, 552)
 
 [node name="trap_3" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(316, 552)
+position = Vector2(323, 551)
 
 [node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(432, 344)
@@ -270,8 +270,9 @@ rotates = false
 remote_path = NodePath("../../AnimatableBody2D")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D" groups=["block"]]
-position = Vector2(351.452, 306.159)
+position = Vector2(352, 395)
 rotation = 1.56333
+scale = Vector2(1, 1)
 collision_mask = 18
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
