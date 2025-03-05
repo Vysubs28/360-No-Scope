@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=47 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="5_y27ul"]
 [ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="6_efx1c"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="8_kce8e"]
+[ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="10_p7ybs"]
 [ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Fence.png" id="11_76h1a"]
 [ext_resource type="Texture2D" uid="uid://cxj05nmgrg7is" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Statue.png" id="12_5xk8o"]
 [ext_resource type="Texture2D" uid="uid://byqop3osm24hu" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Bridge_01.png" id="13_syx3d"]
@@ -95,7 +96,7 @@ _data = {
 point_count = 4
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hc86r"]
-size = Vector2(38.8647, 50.4162)
+size = Vector2(38.2682, 80.6663)
 
 [sub_resource type="Animation" id="Animation_xipup"]
 resource_name = "Enemy_Walking"
@@ -990,20 +991,26 @@ position = Vector2(410, 197)
 rotation = -0.517031
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
-remote_path = NodePath("../../AnimatableBody2D")
+remote_path = NodePath("../enemy2/AnimatableBody2D")
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
-position = Vector2(410, 197)
-rotation = -0.517032
-
-[node name="enemy2" parent="Path2D/AnimatableBody2D" instance=ExtResource("14_68ley")]
-position = Vector2(24.7879, 10.8886)
-scale = Vector2(1.41341, 1.27137)
+[node name="enemy2" parent="Path2D/PathFollow2D" instance=ExtResource("14_68ley")]
+position = Vector2(28.5907, -0.998047)
+scale = Vector2(2.17654, 1.68138)
+animation = &"idle"
 autoplay = "walk"
+frame_progress = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
-position = Vector2(23.7049, 15.0225)
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D/enemy2"]
+position = Vector2(-13.1358, 0.593567)
+scale = Vector2(0.459445, 0.59475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/enemy2/AnimatableBody2D"]
+position = Vector2(31.1143, -9.91632)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hc86r")
+
+[node name="Enemy_Death" type="AudioStreamPlayer" parent="Path2D/PathFollow2D/enemy2"]
+stream = ExtResource("10_p7ybs")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
 libraries = {
