@@ -414,6 +414,7 @@ remote_path = NodePath("../../AnimatableBody2D")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
 position = Vector2(368, 216)
 rotation = -0.785398
+scale = Vector2(1, 1)
 
 [node name="enemy2" parent="Path2D/AnimatableBody2D" instance=ExtResource("14_68ley")]
 position = Vector2(13.2292, -8.81943)

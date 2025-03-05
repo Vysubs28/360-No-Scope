@@ -12682,7 +12682,7 @@ offset_right = 1228.0
 offset_bottom = 537.0
 texture = ExtResource("3_bfk64")
 
-[node name="Area2D" parent="." instance=ExtResource("4_vrh8m")]
+[node name="end_collision1" parent="." instance=ExtResource("4_vrh8m")]
 script = ExtResource("5_ojvqe")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
