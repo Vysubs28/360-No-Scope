@@ -1,8 +1,9 @@
-[gd_scene load_steps=54 format=3 uid="uid://12y26jx8744u"]
+[gd_scene load_steps=55 format=3 uid="uid://12y26jx8744u"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_sdsb4"]
+[ext_resource type="Script" path="res://Test_Character/Character/end_collision3.gd" id="3_3kjex"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="4_47nb4"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
@@ -16137,6 +16138,9 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_gql3o")
 
+[node name="Area2D" parent="." instance=ExtResource("26_b6jmg")]
+script = ExtResource("3_3kjex")
+
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_sdsb4")
 volume_db = -26.0
@@ -16234,9 +16238,6 @@ text = "R
 "
 
 [node name="Bullets2" type="Node" parent="."]
-
-[node name="Area2D" parent="." instance=ExtResource("26_b6jmg")]
-position = Vector2(24, 19)
 
 [connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="shoot" from="MC3" to="." method="_on_mc_shoot"]
