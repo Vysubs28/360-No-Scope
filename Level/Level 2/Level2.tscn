@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://bbm0dovvpic3r"]
+[gd_scene load_steps=30 format=3 uid="uid://bbm0dovvpic3r"]
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="8_x1m7g"]
 [ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="9_4nsk6"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="9_pfwbr"]
+[ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="14_xn3ch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nvntn"]
 texture = ExtResource("5_4fjv5")
@@ -246,10 +247,10 @@ stream = ExtResource("9_4nsk6")
 position = Vector2(14, 23)
 
 [node name="trap_1" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(186, 560)
+position = Vector2(181, 983)
 
 [node name="trap_3" parent="." instance=ExtResource("9_pfwbr")]
-position = Vector2(326, 557)
+position = Vector2(330, 986)
 
 [node name="Enemy2" parent="." instance=ExtResource("8_x1m7g")]
 position = Vector2(432, 344)
@@ -272,6 +273,7 @@ remote_path = NodePath("../../AnimatableBody2D")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D" groups=["block"]]
 position = Vector2(352, 395)
 rotation = 1.56333
+scale = Vector2(1, 1)
 collision_mask = 18
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/AnimatableBody2D"]
@@ -326,6 +328,8 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_b6mub")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i8j5n")
 text = "R
 "
+
+[node name="Area2D" parent="." instance=ExtResource("14_xn3ch")]
 
 [connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="shoot" from="MC2" to="." method="_on_mc_2_shoot"]

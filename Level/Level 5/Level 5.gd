@@ -31,8 +31,5 @@ func _on_restart_pressed():
 func _on_enemy_1_enemy_died():
 	print("We got to the signal")
 	var player = get_node("MC5")
-	if player:
-		player.fly()
-		get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
-	else:
-		print("found an error")
+	player.fly()
+	
