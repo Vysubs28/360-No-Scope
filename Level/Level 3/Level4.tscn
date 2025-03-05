@@ -987,7 +987,7 @@ script = ExtResource("13_un7ec")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2(410, 197)
-rotation = -0.517032
+rotation = -0.517031
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../AnimatableBody2D")
@@ -995,7 +995,6 @@ remote_path = NodePath("../../AnimatableBody2D")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
 position = Vector2(410, 197)
 rotation = -0.517032
-scale = Vector2(1, 1)
 
 [node name="enemy2" parent="Path2D/AnimatableBody2D" instance=ExtResource("14_68ley")]
 position = Vector2(24.7879, 10.8886)
@@ -1004,7 +1003,6 @@ autoplay = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(23.7049, 15.0225)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hc86r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
