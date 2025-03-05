@@ -182,7 +182,7 @@ frame_progress = 0.723277
 script = ExtResource("2_tdcix")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.9
+wait_time = 2.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

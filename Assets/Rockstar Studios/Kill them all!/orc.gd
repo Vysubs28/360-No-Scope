@@ -9,7 +9,7 @@ var is_dead = false
 
 
 func change_direction():
-	$enemy2.scale.x * -1
+	self.scale.x *= -1
 	if(is_dead == false):
 		$Timer.start()
 
