@@ -1,8 +1,9 @@
-[gd_scene load_steps=53 format=3 uid="uid://12y26jx8744u"]
+[gd_scene load_steps=55 format=3 uid="uid://12y26jx8744u"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_sdsb4"]
+[ext_resource type="Script" path="res://Test_Character/Character/end_collision3.gd" id="3_3kjex"]
 [ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="4_47nb4"]
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
@@ -25,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="11_v8lqw"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_bjh57"]
 [ext_resource type="Texture2D" uid="uid://cbiboyndsrnhx" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_07.png" id="12_c66mw"]
+[ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="26_b6jmg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("5_bmyfd")
@@ -16135,6 +16137,9 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_gql3o")
+
+[node name="Area2D" parent="." instance=ExtResource("26_b6jmg")]
+script = ExtResource("3_3kjex")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_sdsb4")

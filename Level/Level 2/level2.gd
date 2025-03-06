@@ -35,6 +35,4 @@ func _on_enemy_2_enemy_died():
 	enemies -= 1
 	if player and enemies == 0:
 		player.fly()
-		get_tree().change_scene_to_file("res://LevelMenu/NextLevel2.tscn")
-	else:
-		print("found an error")
+		

@@ -24,8 +24,5 @@ func _on_mc_shoot(pos):
 
 func _on_enemy_1_enemy_died():
 	var player = get_node("MC3")
-	if player:
-		player.fly()
-		get_tree().change_scene_to_file("res://LevelMenu/NextLevel3.tscn")
-	else:
-		print("found an error")
+	player.fly()
+		
