@@ -1001,12 +1001,11 @@ autoplay = "walk"
 frame_progress = 0.0
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D/enemy2"]
-position = Vector2(-13.1358, 0.593567)
+position = Vector2(-13.1358, 0.593597)
 scale = Vector2(0.459445, 0.59475)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/enemy2/AnimatableBody2D"]
 position = Vector2(31.1143, -9.91632)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hc86r")
 
 [node name="Enemy_Death" type="AudioStreamPlayer" parent="Path2D/PathFollow2D/enemy2"]
