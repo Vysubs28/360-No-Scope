@@ -32,6 +32,9 @@ size = Vector2(309, 107)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxben"]
 size = Vector2(149, 145)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5etln"]
+size = Vector2(75, 90)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wfvmq"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
@@ -913,7 +916,7 @@ offset_right = 1215.0
 offset_bottom = 540.0
 texture = ExtResource("1_rhd7h")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["no_bounce"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(96, 200)
@@ -929,6 +932,10 @@ shape = SubResource("RectangleShape2D_1qjpr")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(672.5, 197.5)
 shape = SubResource("RectangleShape2D_rxben")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" groups=["no_bounce"]]
+position = Vector2(711.5, 77)
+shape = SubResource("RectangleShape2D_5etln")
 
 [node name="MC" parent="." instance=ExtResource("2_bmnu1")]
 position = Vector2(97, 41)
@@ -986,7 +993,7 @@ text = "R
 [node name="Bullets2" type="Node" parent="."]
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(39.7232, 0)
+position = Vector2(41.7232, 0)
 scale = Vector2(0.903114, 1)
 curve = SubResource("Curve2D_yq8vr")
 script = ExtResource("13_un7ec")

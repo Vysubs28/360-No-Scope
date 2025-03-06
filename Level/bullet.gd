@@ -51,3 +51,6 @@ func _physics_process(delta):
 		elif hit_body.is_in_group("block"):
 			queue_free()
 			print("arrow destroyed")
+		elif hit_body.is_in_group("no_bounce"):
+			queue_free()
+			
