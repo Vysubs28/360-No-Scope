@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=48 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
