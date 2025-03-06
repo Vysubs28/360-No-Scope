@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://ccru58nrugvf5"]
+[gd_scene load_steps=55 format=3 uid="uid://ccru58nrugvf5"]
 
 [ext_resource type="Script" path="res://Level/Level 5/Level 5.gd" id="1_mwgjk"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_ny4c5"]
@@ -29,6 +29,7 @@
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="13_sdhot"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="14_8vx34"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="15_t5yd8"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="26_e8dxg"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="30_0rr0v"]
 [ext_resource type="Script" path="res://Test_Character/Character/end_collision5.gd" id="31_a2dmi"]
 
@@ -3223,6 +3224,10 @@ stream = ExtResource("11_lagtk")
 
 [node name="Camera2D" type="Camera2D" parent="MC5"]
 position_smoothing_enabled = true
+
+[node name="whaoo" type="AudioStreamPlayer" parent="MC5"]
+stream = ExtResource("26_e8dxg")
+volume_db = 20.0
 
 [node name="enemy_1" parent="." instance=ExtResource("12_vvdwy")]
 position = Vector2(1186, 0)
