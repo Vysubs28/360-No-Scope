@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=47 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
@@ -29,6 +29,9 @@ size = Vector2(309, 107)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxben"]
 size = Vector2(149, 145)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5etln"]
+size = Vector2(75, 90)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wfvmq"]
 bg_color = Color(1, 1, 1, 1)
@@ -911,7 +914,7 @@ offset_right = 1215.0
 offset_bottom = 540.0
 texture = ExtResource("1_rhd7h")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["walls"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["no_bounce"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(96, 200)
@@ -927,6 +930,10 @@ shape = SubResource("RectangleShape2D_1qjpr")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(672.5, 197.5)
 shape = SubResource("RectangleShape2D_rxben")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" groups=["no_bounce"]]
+position = Vector2(711.5, 77)
+shape = SubResource("RectangleShape2D_5etln")
 
 [node name="MC" parent="." instance=ExtResource("2_bmnu1")]
 position = Vector2(97, 41)
@@ -980,31 +987,31 @@ text = "R
 [node name="Bullets2" type="Node" parent="."]
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(39.7232, 0)
+position = Vector2(41.7232, 0)
 scale = Vector2(0.903114, 1)
 curve = SubResource("Curve2D_yq8vr")
 script = ExtResource("13_un7ec")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2(410, 197)
-rotation = -0.517032
+rotation = -0.517031
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../AnimatableBody2D")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D"]
 position = Vector2(410, 197)
-rotation = -0.517032
+rotation = -0.517031
 scale = Vector2(1, 1)
 
 [node name="enemy2" parent="Path2D/AnimatableBody2D" instance=ExtResource("14_68ley")]
 position = Vector2(24.7879, 10.8886)
 scale = Vector2(1.41341, 1.27137)
 autoplay = "walk"
+frame_progress = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/AnimatableBody2D"]
 position = Vector2(23.7049, 15.0225)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hc86r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D"]
