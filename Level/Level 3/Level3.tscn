@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://12y26jx8744u"]
+[gd_scene load_steps=56 format=3 uid="uid://12y26jx8744u"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Fence.png" id="10_0q55a"]
 [ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="10_8xvns"]
 [ext_resource type="Texture2D" uid="uid://cfcy7nltird6v" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_01.png" id="11_e0t18"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="11_iujy5"]
 [ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="11_tmqum"]
 [ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="11_v8lqw"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_bjh57"]
@@ -16166,6 +16167,10 @@ stream = ExtResource("6_twvl2")
 
 [node name="sfx_jump" type="AudioStreamPlayer" parent="MC3"]
 stream = ExtResource("7_e5om0")
+
+[node name="whaoo" type="AudioStreamPlayer" parent="MC3"]
+stream = ExtResource("11_iujy5")
+volume_db = 20.0
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 2

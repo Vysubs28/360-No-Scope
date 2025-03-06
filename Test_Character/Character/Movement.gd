@@ -8,6 +8,7 @@ extends CharacterBody2D
 @onready var Death_sfx = $Death_sfx
 @onready var sfx_jump = $sfx_jump
 @onready var sfx_bow = $sfx_bow
+@onready var whaoo = $whaoo
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -17,6 +18,7 @@ var was_in_air : bool = false
 var can_shoot : bool = true
 var dead : bool = false
 var flying : bool = false
+var whaoos : bool = false
 
 signal shoot(pos: Vector2)
 
@@ -104,5 +106,10 @@ func fly():
 		velocity.y = -500
 		print("should be flying")
 		animated_sprite.play("spin")
+		if whaoos == false:
+			whaoo.play()
+			whaoos = true
+		
+
 		
 

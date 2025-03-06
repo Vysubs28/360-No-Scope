@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://w5su4avq3it"]
+[gd_scene load_steps=33 format=3 uid="uid://w5su4avq3it"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_76t14"]
@@ -17,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="10_51hpb"]
 [ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="10_x2nuw"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="11_m7f47"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="13_fp5cg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("2_mfjbj")
@@ -12716,6 +12717,10 @@ position = Vector2(47, 211)
 
 [node name="sfx_jump" type="AudioStreamPlayer" parent="MC"]
 stream = ExtResource("9_m2vsa")
+
+[node name="whaoo" type="AudioStreamPlayer" parent="MC"]
+stream = ExtResource("13_fp5cg")
+volume_db = 12.036
 
 [node name="sfx_bow" type="AudioStreamPlayer" parent="MC"]
 stream = ExtResource("10_x2nuw")
