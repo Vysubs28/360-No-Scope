@@ -1,4 +1,4 @@
-extends Path2D
+extends Node2D
 
 @export var loop = true
 @export var speed = 2.0
