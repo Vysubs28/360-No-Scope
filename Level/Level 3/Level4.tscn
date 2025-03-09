@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=50 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="8_kce8e"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="10_p7ybs"]
 [ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Fence.png" id="11_76h1a"]
+[ext_resource type="Script" path="res://Level/Level 3/AnimatableBody2D.gd" id="11_ccqvu"]
 [ext_resource type="Texture2D" uid="uid://cxj05nmgrg7is" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Statue.png" id="12_5xk8o"]
 [ext_resource type="Texture2D" uid="uid://byqop3osm24hu" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Bridge_01.png" id="13_syx3d"]
 [ext_resource type="Script" path="res://Level/Level 3/Path2D.gd" id="13_un7ec"]
@@ -1012,9 +1013,10 @@ animation = &"idle"
 autoplay = "walk"
 frame_progress = 0.0
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D/enemy2"]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D/enemy2" groups=["enemies"]]
 position = Vector2(-13.1358, 0.593567)
 scale = Vector2(0.459445, 0.59475)
+script = ExtResource("11_ccqvu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/enemy2/AnimatableBody2D"]
 position = Vector2(31.1143, -9.91632)
@@ -1027,9 +1029,6 @@ stream = ExtResource("10_p7ybs")
 libraries = {
 "": SubResource("AnimationLibrary_iwh71")
 }
-
-[node name="AnimatedSprite2D" parent="." instance=ExtResource("14_68ley")]
-position = Vector2(-77, -84)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-6, -4)
@@ -1056,3 +1055,4 @@ layer_0/tile_data = PackedInt32Array(1245195, 131073, 1, 1310731, 131073, 2, 124
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="enemy_died" from="Path2D/PathFollow2D/enemy2" to="." method="_on_enemy_2_enemy_died"]
