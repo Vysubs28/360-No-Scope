@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=52 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
@@ -19,6 +19,8 @@
 [ext_resource type="Texture2D" uid="uid://b321aq1fh1qsy" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_02.png" id="14_woxyw"]
 [ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="15_vfdva"]
 [ext_resource type="Texture2D" uid="uid://d17gy7ejfgngq" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Lion_Bas_Relief.png" id="16_gcjn8"]
+[ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="20_p0aai"]
+[ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="21_aijfo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbi0u"]
 size = Vector2(128, 336)
@@ -1050,6 +1052,30 @@ rotation = -0.523599
 tile_set = SubResource("TileSet_ci3il")
 format = 2
 layer_0/tile_data = PackedInt32Array(1245195, 131073, 1, 1310731, 131073, 2, 1245196, 65537, 1, 1310732, 65537, 2, 1245197, 131073, 1, 1310733, 131073, 2, 1245198, 196609, 1, 1310734, 196609, 2, 1245189, 65537, 1, 1310725, 65537, 2, 1245190, 131073, 1, 1310726, 131073, 2, 1245191, 65537, 1, 1310727, 65537, 2, 1245192, 131073, 1, 1310728, 131073, 2, 1245193, 65537, 1, 1310729, 65537, 2, 1245194, 65537, 1, 1310730, 65537, 2, 1245186, 1, 1, 1310722, 1, 2, 1245187, 65537, 1, 1310723, 65537, 2, 1245188, 131073, 1, 1310724, 131073, 2)
+
+[node name="trap_1" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(516, 896)
+
+[node name="trap_2" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(366, 898)
+
+[node name="trap_3" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(674, 892)
+
+[node name="trap_4" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(206, 902)
+
+[node name="trap_5" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(48, 908)
+
+[node name="trap_6" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(-124, 904)
+
+[node name="trap_7" parent="." instance=ExtResource("20_p0aai")]
+position = Vector2(842, 888)
+
+[node name="Area2D" parent="." instance=ExtResource("21_aijfo")]
+position = Vector2(38, -165)
 
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

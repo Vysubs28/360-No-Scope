@@ -223,7 +223,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xxucf"]
 radius = 9.0
-height = 54.0
+height = 70.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(1, 0)
