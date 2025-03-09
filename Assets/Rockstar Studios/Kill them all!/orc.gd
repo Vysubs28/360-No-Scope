@@ -18,11 +18,12 @@ func killEnemy():
 		return
 	is_dead = true
 	enemy_died.emit()
-	print('alien1 hit')
-	animated_sprite.play("death")
 	Enemy_Death.play()
-	await animated_sprite.animation_finished
-	queue_free()
+	var parent = get_parent()
+	if parent:
+		var grandparent = parent.get_parent()
+		if grandparent:
+			grandparent.stop_moving()
 
 
 func _on_timer_timeout():
