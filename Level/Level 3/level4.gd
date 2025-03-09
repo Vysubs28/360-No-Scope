@@ -1,26 +1,29 @@
 extends Node2D
 
-@export var loop = true
-@export var speed = 2.0
-@export var speed_scale = 1.0
+@onready var level_music = $Level_Music
 
-@onready var path = $PathFollow2D
-@onready var animation = $AnimationPlayer
-@onready var enemy = $AnimatableBody2D/enemy2
-var moving = true
+const bullet_scene: PackedScene = preload("res://Assets/Rockstar Studios/New Character Design/character_body_2d.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	animation.play("Enemy_Walking")
+	level_music.play()
+
+func _on_exit_pressed():
+	get_tree().change_scene_to_file("res://Menu/main_menu.tscn")
+
+func _on_restart_pressed():
+	get_tree().reload_current_scene()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if moving:
-		path.progress += speed
-func stop_moving():
-	moving = false
-	animation.pause()
-	enemy.play("death1")
-	await enemy.animation_finished
-	queue_free()
+func _on_mc_shoot(pos):
+	var bullet = bullet_scene.instantiate()
+	$Bullets2.add_child(bullet)
+	bullet.position = pos + Vector2(-50, -140)
+
+func _on_enemy_2_enemy_died():
+	var player = get_node("MC")
+	if player:
+		player.fly()
+		#get_tree().change_scene_to_file("res://LevelMenu/NextLevel4.tscn")
+	else:
+		print("found an error")
 

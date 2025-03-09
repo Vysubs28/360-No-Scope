@@ -1011,7 +1011,6 @@ position = Vector2(28.5907, -0.998047)
 scale = Vector2(2.17654, 1.68138)
 animation = &"idle"
 autoplay = "walk"
-frame_progress = 0.0
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D/enemy2" groups=["enemies"]]
 position = Vector2(-13.1358, 0.593567)

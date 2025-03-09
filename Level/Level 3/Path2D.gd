@@ -6,7 +6,7 @@ extends Path2D
 
 @onready var path = $PathFollow2D
 @onready var animation = $AnimationPlayer
-@onready var enemy = $AnimatableBody2D/enemy2
+@onready var enemy = $PathFollow2D/enemy2
 var moving = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,6 +20,9 @@ func _process(delta):
 func stop_moving():
 	moving = false
 	animation.pause()
-	enemy.play("death")
-	await enemy.animation_finished
+	if enemy:
+		enemy.play("death")
+		await enemy.animation_finished
+	else:
+		print("enemy is null")
 	queue_free()

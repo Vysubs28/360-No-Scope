@@ -112,7 +112,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_s4vnc")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -177,8 +177,7 @@ animations = [{
 
 [node name="enemy2" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_sj4r4")
-animation = &"walk"
-frame_progress = 0.723277
+animation = &"death"
 script = ExtResource("2_tdcix")
 
 [node name="Timer" type="Timer" parent="."]
