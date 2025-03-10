@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bp37jjmu7v8w4"]
+[gd_scene load_steps=14 format=3 uid="uid://bp37jjmu7v8w4"]
 
 [ext_resource type="Script" path="res://LevelMenu/LevelMenu.gd" id="1_fgpqf"]
 [ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="2_4d07r"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_wwurb"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="3_qb871"]
+[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="5_ym0n6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
 texture = ExtResource("2_4d07r")
@@ -171,6 +172,13 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
 text = "5"
+
+[node name="Mute_Button" parent="." instance=ExtResource("5_ym0n6")]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 482.0
+offset_right = 696.0
+offset_bottom = 525.0
 
 [connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]

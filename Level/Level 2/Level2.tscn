@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bbm0dovvpic3r"]
+[gd_scene load_steps=33 format=3 uid="uid://bbm0dovvpic3r"]
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="9_pfwbr"]
 [ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="12_tbb77"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="14_xn3ch"]
+[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="17_5eara"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nvntn"]
 texture = ExtResource("5_4fjv5")
@@ -337,6 +338,12 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_b6mub")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i8j5n")
 text = "R
 "
+
+[node name="Mute_Button" parent="." instance=ExtResource("17_5eara")]
+offset_left = 649.0
+offset_top = 119.0
+offset_right = 704.0
+offset_bottom = 162.0
 
 [connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="shoot" from="MC2" to="." method="_on_mc_2_shoot"]

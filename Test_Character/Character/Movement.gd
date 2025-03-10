@@ -9,6 +9,7 @@ extends CharacterBody2D
 @onready var sfx_jump = $sfx_jump
 @onready var sfx_bow = $sfx_bow
 @onready var whaoo = $whaoo
+@onready var audio_button = get_parent().get_node("Mute_Button")
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -19,15 +20,19 @@ var can_shoot : bool = true
 var dead : bool = false
 var flying : bool = false
 var whaoos : bool = false
-
+var music_bus = AudioServer.get_bus_index("Master")
 signal shoot(pos: Vector2)
 
 func restart():
 	get_tree().reload_current_scene()
 	
 func _physics_process(delta):
+	if(not audio_button.button_pressed && AudioServer.is_bus_mute(music_bus)):
+		audio_button.button_pressed = !audio_button.button_pressed
 	if(Input.is_action_just_released("restart")):
 		restart()
+	if(Input.is_action_just_released("mute")):
+		mute()
 	if (not dead):# Add the gravity.
 		if(not flying):
 			if not is_on_floor():
@@ -111,5 +116,9 @@ func fly():
 			whaoos = true
 		
 
-		
+func mute():
+	if(audio_button):
+		audio_button.emit_signal("pressed")
+		audio_button.button_pressed = !audio_button.button_pressed
+	
 

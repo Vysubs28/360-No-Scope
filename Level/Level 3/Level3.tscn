@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://12y26jx8744u"]
+[gd_scene load_steps=57 format=3 uid="uid://12y26jx8744u"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
@@ -28,6 +28,7 @@
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="12_bjh57"]
 [ext_resource type="Texture2D" uid="uid://cbiboyndsrnhx" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_07.png" id="12_c66mw"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="26_b6jmg"]
+[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="29_lnrbb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("5_bmyfd")
@@ -16243,6 +16244,12 @@ text = "R
 "
 
 [node name="Bullets2" type="Node" parent="."]
+
+[node name="Mute_Button" parent="." instance=ExtResource("29_lnrbb")]
+offset_left = 652.0
+offset_top = 112.0
+offset_right = 707.0
+offset_bottom = 155.0
 
 [connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="shoot" from="MC3" to="." method="_on_mc_shoot"]
