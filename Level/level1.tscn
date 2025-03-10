@@ -12726,7 +12726,7 @@ volume_db = 12.036
 stream = ExtResource("10_x2nuw")
 
 [node name="trap_1" parent="." instance=ExtResource("8_win8d")]
-position = Vector2(190, 497)
+position = Vector2(180, 664)
 
 [node name="Bullets" type="Node2D" parent="."]
 
@@ -12771,7 +12771,7 @@ text = "R
 "
 
 [node name="Enemy1" parent="." instance=ExtResource("6_d32gn")]
-position = Vector2(288, 309)
+position = Vector2(341, 313)
 
 [node name="Enemy_Death" type="AudioStreamPlayer" parent="Enemy1"]
 stream = ExtResource("10_51hpb")

@@ -115,7 +115,7 @@ collision_mask = 18
 script = ExtResource("3_g6owd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(13, -19)
+position = Vector2(15, -13)
 scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_e3ibd")
 
