@@ -1,0 +1,129 @@
+[gd_scene load_steps=13 format=3 uid="uid://cw0tyg44im0em"]
+
+[ext_resource type="Script" path="res://LevelMenu/NextLevel2.gd" id="1_wf7yc"]
+[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_nmibi"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="3_rv8ff"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_4wfi6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
+texture = ExtResource("3_rv8ff")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp8qu"]
+bg_color = Color(0.988235, 0.988235, 0.988235, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fispc"]
+bg_color = Color(0.752941, 0.752941, 0.752941, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nvejr"]
+bg_color = Color(0.74902, 0.74902, 0.74902, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_krb88"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vo0jd"]
+bg_color = Color(0.745098, 0.745098, 0.745098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwt8v"]
+bg_color = Color(0.764706, 0.764706, 0.764706, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eu0yv"]
+
+[node name="NextLevel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wf7yc")
+
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_nmibi")
+volume_db = -26.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3qpow")
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 119.0
+offset_top = 275.0
+offset_right = 186.0
+offset_bottom = 328.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4wfi6")
+theme_override_font_sizes/font_size = 63
+theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fispc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nvejr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_krb88")
+text = "Exit"
+
+[node name="Next" type="Button" parent="."]
+layout_mode = 2
+offset_left = 513.0
+offset_top = 263.0
+offset_right = 674.0
+offset_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4wfi6")
+theme_override_font_sizes/font_size = 63
+theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
+text = "->"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.0
+offset_top = 3.0
+offset_right = 160.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_4wfi6")
+theme_override_font_sizes/font_size = 83
+text = "Victorious"
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

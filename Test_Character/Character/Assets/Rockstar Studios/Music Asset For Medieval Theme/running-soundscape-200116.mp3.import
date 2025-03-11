@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0uttdyl4sm64"
+path="res://.godot/imported/running-soundscape-200116.mp3-01e4ee2e89e97ec4c65596742c073996.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/running-soundscape-200116.mp3"
+dest_files=["res://.godot/imported/running-soundscape-200116.mp3-01e4ee2e89e97ec4c65596742c073996.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

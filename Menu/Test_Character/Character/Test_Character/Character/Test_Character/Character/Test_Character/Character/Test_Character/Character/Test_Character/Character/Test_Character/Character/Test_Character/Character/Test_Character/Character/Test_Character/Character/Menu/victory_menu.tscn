@@ -1,0 +1,93 @@
+[gd_scene load_steps=10 format=3 uid="uid://ccqjn5b0127m5"]
+
+[ext_resource type="Script" path="res://Menu/victory_menu.gd" id="1_mbcq8"]
+[ext_resource type="AudioStream" uid="uid://bn8qbqdic2ixr" path="res://Menu/victory.mp3" id="2_usf3o"]
+[ext_resource type="Texture2D" uid="uid://d35ye8ve0q0ii" path="res://Menu/victory.jpg" id="3_0ug82"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_tgwuw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnta0"]
+texture = ExtResource("3_0ug82")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovjlm"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rytu4"]
+bg_color = Color(0.815686, 0.815686, 0.815686, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_150wr"]
+bg_color = Color(0.890196, 0.890196, 0.890196, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2.08165e-12, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uq06e"]
+
+[node name="VictoryMenu" type="Node2D"]
+position = Vector2(559, 292)
+script = ExtResource("1_mbcq8")
+
+[node name="Level_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_usf3o")
+volume_db = 1.64
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -558.0
+offset_top = -290.0
+offset_right = 164.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxTexture_dnta0")
+
+[node name="Next" type="Button" parent="."]
+offset_left = -269.0
+offset_top = 148.0
+offset_right = -153.0
+offset_bottom = 208.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_tgwuw")
+theme_override_font_sizes/font_size = 49
+theme_override_styles/normal = SubResource("StyleBoxFlat_ovjlm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rytu4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_150wr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uq06e")
+text = "->
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = -457.0
+offset_top = -283.0
+offset_right = 53.0
+offset_bottom = -164.0
+theme_override_fonts/font = ExtResource("4_tgwuw")
+theme_override_font_sizes/font_size = 62
+text = "QUEST COMPLETE"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

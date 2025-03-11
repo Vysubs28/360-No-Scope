@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ms67ekleafmo"
+path="res://.godot/imported/Game Background Music.mp3-6c2d83a8b50df5011993894e8b8f8fe7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3"
+dest_files=["res://.godot/imported/Game Background Music.mp3-6c2d83a8b50df5011993894e8b8f8fe7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
