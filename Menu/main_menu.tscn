@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://bmk4o2mugnncj"]
 
 [ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_h03hl"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="2_n8nf8"]
-[ext_resource type="Texture2D" uid="uid://b3uivv16pkg3m" path="res://Menu/Medieval.jpg" id="2_q053n"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="2_n8nf8"]
+[ext_resource type="Texture2D" uid="uid://b3uivv16pkg3m" path="res://Menu/Test_Character/Character/Menu/Medieval.jpg" id="2_q053n"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="4_650t0"]
 [ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="5_mbyrh"]
 

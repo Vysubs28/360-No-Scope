@@ -28,8 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://c312bsrp710pt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Sign_01.png" id="13_r7p5t"]
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="13_sdhot"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="14_8vx34"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="15_t5yd8"]
-[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="26_e8dxg"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="15_t5yd8"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/LevelMenu/super-mario-64-yahoo-sound.mp3" id="26_e8dxg"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="30_0rr0v"]
 [ext_resource type="Script" path="res://Test_Character/Character/end_collision5.gd" id="31_a2dmi"]
 
