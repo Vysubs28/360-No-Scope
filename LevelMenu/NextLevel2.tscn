@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://cw0tyg44im0em"]
 
 [ext_resource type="Script" path="res://LevelMenu/NextLevel2.gd" id="1_wf7yc"]
-[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_nmibi"]
-[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="3_rv8ff"]
+[ext_resource type="AudioStream" uid="uid://bs7vihhl7l53a" path="res://LevelMenu/medieval-fanfare-6826.mp3" id="2_r3xsn"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Menu/LevelMenu/LevelPic.jpg" id="3_rv8ff"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_4wfi6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
@@ -59,7 +59,7 @@ grow_vertical = 2
 script = ExtResource("1_wf7yc")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_nmibi")
+stream = ExtResource("2_r3xsn")
 volume_db = -26.0
 
 [node name="Panel" type="Panel" parent="."]
