@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://dxnfk7ifikt5g"]
 
 [ext_resource type="Script" path="res://Menu/tutorial_menu.gd" id="1_3mwhx"]
+[ext_resource type="AudioStream" uid="uid://bkpmam0radh7m" path="res://LevelMenu/medieval-gamer-voice-gather-your-strength-stay-focused-226586.mp3" id="2_1gq4c"]
 [ext_resource type="Texture2D" uid="uid://n4b0o0bq64sd" path="res://Menu/black-brick-wall (1).jpg" id="2_bqqa4"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="3_n0je5"]
-[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="4_h8e84"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnta0"]
 texture = ExtResource("2_bqqa4")
@@ -42,8 +42,8 @@ position = Vector2(559, 292)
 script = ExtResource("1_3mwhx")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_h8e84")
-volume_db = -26.0
+stream = ExtResource("2_1gq4c")
+volume_db = -5.856
 
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 8
