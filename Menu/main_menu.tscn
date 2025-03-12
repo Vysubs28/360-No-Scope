@@ -136,10 +136,6 @@ text = "360 No Scope"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Main_MenuMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_650t0")
-autoplay = true
-
 [node name="Mute_Button" parent="." instance=ExtResource("5_mbyrh")]
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
