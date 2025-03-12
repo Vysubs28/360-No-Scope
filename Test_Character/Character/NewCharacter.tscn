@@ -247,5 +247,9 @@ wait_time = 0.3
 [node name="Death_sfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_oac2d")
 
+[node name="Fly_timer" type="Timer" parent="."]
+wait_time = 5.0
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]
+[connection signal="timeout" from="Fly_timer" to="." method="_on_timer_timeout"]
