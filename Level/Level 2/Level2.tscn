@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="8_x1m7g"]
 [ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="9_4nsk6"]
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="9_pfwbr"]
-[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="12_tbb77"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://Menu/Menu/LevelMenu/super-mario-64-yahoo-sound.mp3" id="12_tbb77"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="14_xn3ch"]
 [ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="17_5eara"]
 

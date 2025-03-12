@@ -17,7 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="10_51hpb"]
 [ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="10_x2nuw"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="11_m7f47"]
-[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="13_fp5cg"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://Menu/Menu/LevelMenu/super-mario-64-yahoo-sound.mp3" id="13_fp5cg"]
 [ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="19_olqdm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
