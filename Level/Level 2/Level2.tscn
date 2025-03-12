@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bbm0dovvpic3r"]
+[gd_scene load_steps=35 format=3 uid="uid://bbm0dovvpic3r"]
 
 [ext_resource type="Script" path="res://Level/Level 2/level2.gd" id="1_d6x24"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_uxmr4"]
@@ -17,6 +17,8 @@
 [ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://LevelMenu/super-mario-64-yahoo-sound.mp3" id="12_tbb77"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="14_xn3ch"]
 [ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="17_5eara"]
+[ext_resource type="PackedScene" uid="uid://dlok18e8q0n0y" path="res://Menu/label.tscn" id="18_0bs4a"]
+[ext_resource type="Script" path="res://Menu/label.gd" id="19_a1w7h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nvntn"]
 texture = ExtResource("5_4fjv5")
@@ -344,6 +346,13 @@ offset_left = 649.0
 offset_top = 119.0
 offset_right = 704.0
 offset_bottom = 162.0
+
+[node name="Label" parent="." instance=ExtResource("18_0bs4a")]
+offset_left = 544.0
+offset_top = 24.0
+offset_right = 584.0
+offset_bottom = 47.0
+script = ExtResource("19_a1w7h")
 
 [connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]
 [connection signal="shoot" from="MC2" to="." method="_on_mc_2_shoot"]

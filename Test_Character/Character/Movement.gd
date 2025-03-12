@@ -96,6 +96,8 @@ func _on_cooldown_timer_timeout():
 
 func killMC():
 	print('player died')
+	Global.update_death()
+	Global.update_glob_death()
 	dead = true
 	can_shoot = false
 	velocity.y = 0

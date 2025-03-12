@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://cqdt4iutpfdpn"]
+[gd_scene load_steps=55 format=3 uid="uid://cqdt4iutpfdpn"]
 
 [ext_resource type="Script" path="res://Level/Level 3/level4.gd" id="1_ibr02"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="1_rhd7h"]
@@ -22,6 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="20_p0aai"]
 [ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="21_aijfo"]
 [ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="22_sfevp"]
+[ext_resource type="PackedScene" uid="uid://dlok18e8q0n0y" path="res://Menu/label.tscn" id="23_i4adx"]
+[ext_resource type="Script" path="res://Menu/label.gd" id="24_10se5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbi0u"]
 size = Vector2(128, 336)
@@ -1083,6 +1085,13 @@ offset_left = 645.0
 offset_top = -30.0
 offset_right = 700.0
 offset_bottom = 13.0
+
+[node name="Label" parent="." instance=ExtResource("23_i4adx")]
+offset_left = 536.0
+offset_top = -127.0
+offset_right = 604.0
+offset_bottom = -104.0
+script = ExtResource("24_10se5")
 
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
