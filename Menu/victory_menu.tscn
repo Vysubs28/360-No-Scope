@@ -47,26 +47,19 @@ stream = ExtResource("2_usf3o")
 volume_db = 1.64
 
 [node name="Panel" type="Panel" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
 offset_left = -558.0
 offset_top = -290.0
 offset_right = 164.0
 offset_bottom = 266.0
-grow_horizontal = 2
-grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxTexture_dnta0")
 
 [node name="Next" type="Button" parent="."]
-offset_left = -269.0
-offset_top = 148.0
-offset_right = -153.0
-offset_bottom = 208.0
+offset_left = -262.0
+offset_top = 191.0
+offset_right = -146.0
+offset_bottom = 251.0
 size_flags_horizontal = 4
 size_flags_vertical = 6
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -83,10 +76,10 @@ text = "->
 "
 
 [node name="Label2" type="Label" parent="."]
-offset_left = -19.0
-offset_top = -181.0
-offset_right = 132.0
-offset_bottom = -120.0
+offset_left = -281.0
+offset_top = 119.0
+offset_right = -130.0
+offset_bottom = 180.0
 script = ExtResource("5_2lo30")
 
 [node name="Label" type="Label" parent="."]
