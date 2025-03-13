@@ -96,6 +96,8 @@ func _on_cooldown_timer_timeout():
 
 func killMC():
 	print('player died')
+	Global.update_death()
+	Global.update_glob_death()
 	dead = true
 	can_shoot = false
 	velocity.y = 0
@@ -114,11 +116,17 @@ func fly():
 		if whaoos == false:
 			whaoo.play()
 			whaoos = true
-		
+		$Fly_timer.start()
+
+func _on_timer_timeout():
+	self.position = Vector2(0, 0)
 
 func mute():
 	if(audio_button):
 		audio_button.emit_signal("pressed")
 		audio_button.button_pressed = !audio_button.button_pressed
 	
+
+
+
 

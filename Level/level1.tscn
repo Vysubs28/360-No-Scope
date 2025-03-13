@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://w5su4avq3it"]
+[gd_scene load_steps=36 format=3 uid="uid://w5su4avq3it"]
 
 [ext_resource type="Script" path="res://Level/world.gd" id="1_midfu"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_76t14"]
@@ -19,6 +19,8 @@
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="11_m7f47"]
 [ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://Menu/Menu/LevelMenu/super-mario-64-yahoo-sound.mp3" id="13_fp5cg"]
 [ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="19_olqdm"]
+[ext_resource type="PackedScene" uid="uid://dlok18e8q0n0y" path="res://Menu/label.tscn" id="20_tkha2"]
+[ext_resource type="Script" path="res://Menu/label.gd" id="21_cty8l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
 texture = ExtResource("2_mfjbj")
@@ -12782,6 +12784,13 @@ offset_left = 649.0
 offset_top = 73.0
 offset_right = 704.0
 offset_bottom = 116.0
+
+[node name="Label" parent="." instance=ExtResource("20_tkha2")]
+offset_left = 535.0
+offset_top = -8.0
+offset_right = 575.0
+offset_bottom = 15.0
+script = ExtResource("21_cty8l")
 
 [connection signal="shoot" from="MC" to="." method="_on_mc_shoot"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
