@@ -60,7 +60,7 @@ script = ExtResource("1_wf7yc")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_r3xsn")
-volume_db = -26.0
+volume_db = 0.234
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
