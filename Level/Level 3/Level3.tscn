@@ -1,38 +1,38 @@
 [gd_scene load_steps=58 format=3 uid="uid://12y26jx8744u"]
 
-[ext_resource type="Script" path="res://Level/Level 3/level3.gd" id="1_gql3o"]
-[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_1uy0g"]
-[ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_sdsb4"]
-[ext_resource type="Script" path="res://Test_Character/Character/end_collision3.gd" id="3_3kjex"]
-[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="3_7qqhx"]
-[ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="4_47nb4"]
-[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="4_74ef6"]
-[ext_resource type="Texture2D" uid="uid://clup3ngiefxjr" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_07.png" id="5_3dtkx"]
-[ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="5_bmyfd"]
-[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="6_46b0x"]
-[ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="6_twvl2"]
-[ext_resource type="Texture2D" uid="uid://weescsnd3w7t" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_05.png" id="6_x5t5p"]
-[ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="7_e5om0"]
-[ext_resource type="Texture2D" uid="uid://cfd85l2hjyvee" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_04.png" id="7_qiqg1"]
-[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="7_thmvv"]
-[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="8_gxibo"]
-[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="8_yropm"]
-[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="9_1brlo"]
-[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="9_qe4ba"]
-[ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Fence.png" id="10_0q55a"]
-[ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="10_8xvns"]
-[ext_resource type="Texture2D" uid="uid://cfcy7nltird6v" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_01.png" id="11_e0t18"]
-[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://Menu/Menu/LevelMenu/super-mario-64-yahoo-sound.mp3" id="11_iujy5"]
-[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="11_tmqum"]
-[ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="11_v8lqw"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="12_bjh57"]
-[ext_resource type="Texture2D" uid="uid://cbiboyndsrnhx" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_07.png" id="12_c66mw"]
-[ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="26_b6jmg"]
-[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="29_lnrbb"]
-[ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="30_qjs3d"]
+[ext_resource type="Script" path="res://level/level 3/level3.gd" id="1_ceds7"]
+[ext_resource type="PackedScene" uid="uid://du5ik1rnit0it" path="res://Test_Character/Character/end_collision.tscn" id="2_a4lnq"]
+[ext_resource type="Script" path="res://Test_Character/Character/end_collision3.gd" id="3_lg7ku"]
+[ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="4_6t5qw"]
+[ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="5_ah8k3"]
+[ext_resource type="PackedScene" uid="uid://cyibs22jky283" path="res://Assets/Rockstar Studios/Enemies/enemy_1.tscn" id="6_57xui"]
+[ext_resource type="AudioStream" uid="uid://deuca54n4x242" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/monster-2-277522.mp3" id="7_d1gou"]
+[ext_resource type="PackedScene" uid="uid://bp123p4v3j18m" path="res://Test_Character/Character/NewCharacter.tscn" id="8_037jp"]
+[ext_resource type="AudioStream" uid="uid://c3r8kfndwwdah" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/bow_release.mp3" id="9_pmnob"]
+[ext_resource type="AudioStream" uid="uid://cndacdvmx3xve" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/jump-sound-14839-[AudioTrimmer.com].mp3" id="10_tr1na"]
+[ext_resource type="AudioStream" uid="uid://qy56fmjgfqem" path="res://Menu/Menu/LevelMenu/super-mario-64-yahoo-sound.mp3" id="11_1riad"]
+[ext_resource type="Texture2D" uid="uid://b1lghww25gtkw" path="res://Assets/Rockstar Studios/Tileset/Tileset.png" id="12_xl5sj"]
+[ext_resource type="Texture2D" uid="uid://clup3ngiefxjr" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_07.png" id="13_bwfmc"]
+[ext_resource type="Texture2D" uid="uid://weescsnd3w7t" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_05.png" id="14_6twa3"]
+[ext_resource type="Texture2D" uid="uid://cfd85l2hjyvee" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground-Additional_04.png" id="15_8mnic"]
+[ext_resource type="Texture2D" uid="uid://dns7kkqli65fl" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_02.png" id="16_j7ltd"]
+[ext_resource type="Texture2D" uid="uid://dsdaise6vnv6c" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Decor_Plant.png" id="17_o0yy8"]
+[ext_resource type="Texture2D" uid="uid://c0njmqjrs60of" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Fence.png" id="18_nhv6c"]
+[ext_resource type="Texture2D" uid="uid://cfcy7nltird6v" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Grass_01.png" id="19_yafub"]
+[ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="20_jd0qu"]
+[ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="21_d2n4m"]
+[ext_resource type="Texture2D" uid="uid://co7dvhf1j238a" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Brick_01.png" id="22_htcyt"]
+[ext_resource type="Texture2D" uid="uid://dkv657j0og4w6" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_01.png" id="23_jjj5x"]
+[ext_resource type="Texture2D" uid="uid://rx74geu6fbx0" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Decor_Brick.png" id="24_uferl"]
+[ext_resource type="Texture2D" uid="uid://bgfpf0do0mqkt" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Environment/Rock_05.png" id="25_rvjtu"]
+[ext_resource type="Texture2D" uid="uid://t8515y4rw4u2" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_02.png" id="26_28ot2"]
+[ext_resource type="Texture2D" uid="uid://cbiboyndsrnhx" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_07.png" id="27_i7eyu"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="28_si7ox"]
+[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="29_kxfgb"]
+[ext_resource type="PackedScene" uid="uid://4pwgg6o8o7u0" path="res://Assets/Rockstar Studios/Enemies/trap_1.tscn" id="30_xkq1h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3edqm"]
-texture = ExtResource("5_bmyfd")
+texture = ExtResource("12_xl5sj")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -446,7 +446,7 @@ texture = ExtResource("5_bmyfd")
 8:13/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hhdq"]
-texture = ExtResource("2_1uy0g")
+texture = ExtResource("5_ah8k3")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -11903,7 +11903,7 @@ texture = ExtResource("2_1uy0g")
 82:45/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8cr75"]
-texture = ExtResource("5_3dtkx")
+texture = ExtResource("13_bwfmc")
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
@@ -13046,7 +13046,7 @@ texture = ExtResource("5_3dtkx")
 19:19/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcai7"]
-texture = ExtResource("6_x5t5p")
+texture = ExtResource("14_6twa3")
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
@@ -13385,7 +13385,7 @@ texture = ExtResource("6_x5t5p")
 2:6/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tkbe"]
-texture = ExtResource("7_qiqg1")
+texture = ExtResource("15_8mnic")
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
@@ -14213,7 +14213,7 @@ texture = ExtResource("7_qiqg1")
 19:19/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y7ukx"]
-texture = ExtResource("8_gxibo")
+texture = ExtResource("16_j7ltd")
 use_texture_padding = false
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -14304,7 +14304,7 @@ use_texture_padding = false
 7:3/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wa5kb"]
-texture = ExtResource("9_1brlo")
+texture = ExtResource("17_o0yy8")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -14481,7 +14481,7 @@ texture = ExtResource("9_1brlo")
 5:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gxdp0"]
-texture = ExtResource("10_0q55a")
+texture = ExtResource("18_nhv6c")
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
@@ -14619,7 +14619,7 @@ texture = ExtResource("10_0q55a")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3lhc0"]
-texture = ExtResource("11_e0t18")
+texture = ExtResource("19_yafub")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -14712,7 +14712,7 @@ texture = ExtResource("11_e0t18")
 7:3/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fourm"]
-texture = ExtResource("6_46b0x")
+texture = ExtResource("20_jd0qu")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -14908,7 +14908,7 @@ texture = ExtResource("6_46b0x")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ox83l"]
 resource_name = "G2"
-texture = ExtResource("7_thmvv")
+texture = ExtResource("21_d2n4m")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -15103,7 +15103,7 @@ texture = ExtResource("7_thmvv")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i1fpb"]
-texture = ExtResource("8_yropm")
+texture = ExtResource("22_htcyt")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -15298,7 +15298,7 @@ texture = ExtResource("8_yropm")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hbq1"]
-texture = ExtResource("9_qe4ba")
+texture = ExtResource("23_jjj5x")
 6:0/0 = 0
 6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:0/0/physics_layer_0/angular_velocity = 0.0
@@ -15422,7 +15422,7 @@ texture = ExtResource("9_qe4ba")
 5:3/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e6s6h"]
-texture = ExtResource("10_8xvns")
+texture = ExtResource("24_uferl")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -15617,7 +15617,7 @@ texture = ExtResource("10_8xvns")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sboxm"]
-texture = ExtResource("11_tmqum")
+texture = ExtResource("25_rvjtu")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -15668,7 +15668,7 @@ texture = ExtResource("11_tmqum")
 3:3/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w40t3"]
-texture = ExtResource("11_v8lqw")
+texture = ExtResource("26_28ot2")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -15863,7 +15863,7 @@ texture = ExtResource("11_v8lqw")
 7:7/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lsg8k"]
-texture = ExtResource("12_c66mw")
+texture = ExtResource("27_i7eyu")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -16139,14 +16139,14 @@ shadow_offset = Vector2(2.08165e-12, 3.41)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ascj"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_gql3o")
+script = ExtResource("1_ceds7")
 
-[node name="Area2D" parent="." instance=ExtResource("26_b6jmg")]
+[node name="Area2D" parent="." instance=ExtResource("2_a4lnq")]
 position = Vector2(-146, -51)
-script = ExtResource("3_3kjex")
+script = ExtResource("3_lg7ku")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sdsb4")
+stream = ExtResource("4_6t5qw")
 volume_db = -26.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -16154,25 +16154,25 @@ offset_left = -152.0
 offset_top = -208.0
 offset_right = 1182.0
 offset_bottom = 785.0
-texture = ExtResource("2_1uy0g")
+texture = ExtResource("5_ah8k3")
 
-[node name="Enemy1" parent="TextureRect" instance=ExtResource("4_74ef6")]
+[node name="Enemy1" parent="TextureRect" instance=ExtResource("6_57xui")]
 position = Vector2(668, 538)
 
 [node name="Enemy_Death" type="AudioStreamPlayer" parent="TextureRect/Enemy1"]
-stream = ExtResource("4_47nb4")
+stream = ExtResource("7_d1gou")
 
-[node name="MC3" parent="." instance=ExtResource("3_7qqhx")]
+[node name="MC3" parent="." instance=ExtResource("8_037jp")]
 position = Vector2(48, 128)
 
 [node name="sfx_bow" type="AudioStreamPlayer" parent="MC3"]
-stream = ExtResource("6_twvl2")
+stream = ExtResource("9_pmnob")
 
 [node name="sfx_jump" type="AudioStreamPlayer" parent="MC3"]
-stream = ExtResource("7_e5om0")
+stream = ExtResource("10_tr1na")
 
 [node name="whaoo" type="AudioStreamPlayer" parent="MC3"]
-stream = ExtResource("11_iujy5")
+stream = ExtResource("11_1riad")
 volume_db = 20.0
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -16216,7 +16216,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_bjh57")
+theme_override_fonts/font = ExtResource("28_si7ox")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_247jj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ehbie")
@@ -16236,7 +16236,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_bjh57")
+theme_override_fonts/font = ExtResource("28_si7ox")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_6rrma")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d5ni2")
@@ -16247,22 +16247,22 @@ text = "R
 
 [node name="Bullets2" type="Node" parent="."]
 
-[node name="Mute_Button" parent="." instance=ExtResource("29_lnrbb")]
+[node name="Mute_Button" parent="." instance=ExtResource("29_kxfgb")]
 offset_left = 652.0
 offset_top = 112.0
 offset_right = 707.0
 offset_bottom = 155.0
 
-[node name="trap_1" parent="." instance=ExtResource("30_qjs3d")]
+[node name="trap_1" parent="." instance=ExtResource("30_xkq1h")]
 position = Vector2(177, 1412)
 
-[node name="trap_1" parent="trap_1" instance=ExtResource("30_qjs3d")]
+[node name="trap_1" parent="trap_1" instance=ExtResource("30_xkq1h")]
 position = Vector2(145, 1)
 
-[node name="trap_2" parent="trap_1" instance=ExtResource("30_qjs3d")]
+[node name="trap_2" parent="trap_1" instance=ExtResource("30_xkq1h")]
 position = Vector2(-146, 2)
 
-[node name="trap_2" parent="." instance=ExtResource("30_qjs3d")]
+[node name="trap_2" parent="." instance=ExtResource("30_xkq1h")]
 position = Vector2(466, 1415)
 
 [connection signal="enemy_died" from="TextureRect/Enemy1" to="." method="_on_enemy_1_enemy_died"]

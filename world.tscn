@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://dshovmehn3sej"]
 
-[ext_resource type="Script" path="res://Level/world.gd" id="1_3fqs3"]
+[ext_resource type="Script" path="res://level/world.gd" id="1_3fqs3"]
 [ext_resource type="Texture2D" uid="uid://qt2ya3284fte" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Background/Background_01.png" id="2_kbx0w"]
 [ext_resource type="Texture2D" uid="uid://bqnmfdgmn508s" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_11.png" id="4_lbgf0"]
 [ext_resource type="Texture2D" uid="uid://uwmx41xxrs1p" path="res://Assets/Rockstar Studios/Medieval Ruins Cartoon/PNG/Platformer/Ground_06.png" id="5_1xg66"]

@@ -1,13 +1,13 @@
 [gd_scene load_steps=14 format=3 uid="uid://bp37jjmu7v8w4"]
 
-[ext_resource type="Script" path="res://LevelMenu/LevelMenu.gd" id="1_fgpqf"]
-[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/LevelMenu/LevelPic.jpg" id="2_4d07r"]
-[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_wwurb"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="3_qb871"]
-[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="5_ym0n6"]
+[ext_resource type="Script" path="res://levelMenu/levelMenu.gd" id="1_4u162"]
+[ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_s6iw7"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Menu/LevelMenu/LevelPic.jpg" id="3_opt5l"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_444kj"]
+[ext_resource type="PackedScene" uid="uid://bdvlxsnaf02ga" path="res://Menu/mute_button.tscn" id="5_tx60x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
-texture = ExtResource("2_4d07r")
+texture = ExtResource("3_opt5l")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp8qu"]
 bg_color = Color(0.988235, 0.988235, 0.988235, 1)
@@ -57,10 +57,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_fgpqf")
+script = ExtResource("1_4u162")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_wwurb")
+stream = ExtResource("2_s6iw7")
 volume_db = -26.0
 
 [node name="Panel" type="Panel" parent="."]
@@ -84,7 +84,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_fonts/font = ExtResource("4_444kj")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fispc")
@@ -104,7 +104,7 @@ theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_fonts/font = ExtResource("4_444kj")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
@@ -124,7 +124,7 @@ theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_fonts/font = ExtResource("4_444kj")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
@@ -144,7 +144,7 @@ theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_fonts/font = ExtResource("4_444kj")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
@@ -166,7 +166,7 @@ theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qb871")
+theme_override_fonts/font = ExtResource("4_444kj")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
@@ -174,7 +174,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_nwt8v")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eu0yv")
 text = "5"
 
-[node name="Mute_Button" parent="." instance=ExtResource("5_ym0n6")]
+[node name="Mute_Button" parent="." instance=ExtResource("5_tx60x")]
 layout_mode = 0
 offset_left = 641.0
 offset_top = 482.0

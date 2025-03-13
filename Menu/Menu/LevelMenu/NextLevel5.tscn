@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://chwwd8enaccyv"]
 
-[ext_resource type="Script" path="res://LevelMenu/NextLevel5.gd" id="1_c4juj"]
+[ext_resource type="Script" path="res://levelMenu/nextLevel5.gd" id="1_c4juj"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_djudr"]
-[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://LevelMenu/LevelPic.jpg" id="3_r72pn"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Menu/LevelMenu/LevelPic.jpg" id="3_r72pn"]
 [ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_q0jyf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://qy56fmjgfqem"
-path="res://.godot/imported/super-mario-64-yahoo-sound.mp3-a522375889b48afa044262d581d22084.mp3str"
+path="res://.godot/imported/super-mario-64-yahoo-sound.mp3-7aa21389100c757fe9a42876127916fa.mp3str"
 
 [deps]
 
-source_file="res://LevelMenu/super-mario-64-yahoo-sound.mp3"
-dest_files=["res://.godot/imported/super-mario-64-yahoo-sound.mp3-a522375889b48afa044262d581d22084.mp3str"]
+source_file="res://levelMenu/super-mario-64-yahoo-sound.mp3"
+dest_files=["res://.godot/imported/super-mario-64-yahoo-sound.mp3-7aa21389100c757fe9a42876127916fa.mp3str"]
 
 [params]
 

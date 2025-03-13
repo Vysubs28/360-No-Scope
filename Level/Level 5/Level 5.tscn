@@ -1,6 +1,6 @@
 [gd_scene load_steps=55 format=3 uid="uid://ccru58nrugvf5"]
 
-[ext_resource type="Script" path="res://Level/Level 5/Level 5.gd" id="1_mwgjk"]
+[ext_resource type="Script" path="res://level/Level 5/Level 5.gd" id="1_mwgjk"]
 [ext_resource type="AudioStream" uid="uid://drw4u0e36r1g0" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/medieval-background-196571.mp3" id="2_ny4c5"]
 [ext_resource type="Texture2D" uid="uid://cspqi2bjdol6o" path="res://Assets/Rockstar Studios/New Background Assets/New folder/PNG/Cartoon_Forest_BG_02/Layers/Sky.png" id="3_ak6ib"]
 [ext_resource type="Texture2D" uid="uid://dcvjfdqvghm2v" path="res://Assets/Rockstar Studios/New Background Assets/New folder/PNG/Cartoon_Forest_BG_02/Layers/Foreground.png" id="4_ag6o0"]

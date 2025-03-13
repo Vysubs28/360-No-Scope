@@ -1,12 +1,12 @@
 [gd_scene load_steps=13 format=3 uid="uid://cc57xa14jrge6"]
 
-[ext_resource type="Script" path="res://LevelMenu/NextLevel.gd" id="1_0tvwn"]
-[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Menu/LevelMenu/LevelPic.jpg" id="2_s6icy"]
-[ext_resource type="AudioStream" uid="uid://bs7vihhl7l53a" path="res://LevelMenu/medieval-fanfare-6826.mp3" id="2_tnakj"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="3_rgc6x"]
+[ext_resource type="Script" path="res://levelMenu/nextLevel.gd" id="1_kfgdc"]
+[ext_resource type="AudioStream" uid="uid://bs7vihhl7l53a" path="res://levelMenu/medieval-fanfare-6826.mp3" id="2_aobnb"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Menu/LevelMenu/LevelPic.jpg" id="3_2p5pk"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_7gpws"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
-texture = ExtResource("2_s6icy")
+texture = ExtResource("3_2p5pk")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp8qu"]
 bg_color = Color(0.988235, 0.988235, 0.988235, 1)
@@ -56,10 +56,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0tvwn")
+script = ExtResource("1_kfgdc")
 
 [node name="Level_Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_tnakj")
+stream = ExtResource("2_aobnb")
 volume_db = 0.234
 
 [node name="Panel" type="Panel" parent="."]
@@ -83,7 +83,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_rgc6x")
+theme_override_fonts/font = ExtResource("4_7gpws")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fispc")
@@ -103,7 +103,7 @@ theme_override_colors/font_color = Color(0.0156863, 0.0156863, 0.0156863, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_rgc6x")
+theme_override_fonts/font = ExtResource("4_7gpws")
 theme_override_font_sizes/font_size = 63
 theme_override_styles/normal = SubResource("StyleBoxFlat_vp8qu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vo0jd")
@@ -121,7 +121,7 @@ offset_top = 3.0
 offset_right = 160.0
 offset_bottom = 90.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("3_rgc6x")
+theme_override_fonts/font = ExtResource("4_7gpws")
 theme_override_font_sizes/font_size = 83
 text = "Victorious"
 
