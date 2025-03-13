@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bf3ftd102gqik"
-path="res://.godot/imported/MedievalSharp-Bold.ttf-b3e2c602f843734d3657061803d01c5c.fontdata"
+path="res://.godot/imported/MedievalSharp-Bold.ttf-bc730bb62e35c67c4b44e04a4b015aa1.fontdata"
 
 [deps]
 
-source_file="res://Menu/MedievalSharp-Bold.ttf"
-dest_files=["res://.godot/imported/MedievalSharp-Bold.ttf-b3e2c602f843734d3657061803d01c5c.fontdata"]
+source_file="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/MedievalSharp-Bold.ttf"
+dest_files=["res://.godot/imported/MedievalSharp-Bold.ttf-bc730bb62e35c67c4b44e04a4b015aa1.fontdata"]
 
 [params]
 

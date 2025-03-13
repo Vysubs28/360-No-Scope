@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnvb2fs42ujhx"
-path="res://.godot/imported/LevelPic.jpg-5cbdf6907a9438e80318ee97f65ee9ea.ctex"
+path="res://.godot/imported/LevelPic.jpg-d1ad36758de604f3d9366b19d842b055.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelMenu/LevelPic.jpg"
-dest_files=["res://.godot/imported/LevelPic.jpg-5cbdf6907a9438e80318ee97f65ee9ea.ctex"]
+source_file="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/LevelMenu/LevelPic.jpg"
+dest_files=["res://.godot/imported/LevelPic.jpg-d1ad36758de604f3d9366b19d842b055.ctex"]
 
 [params]
 

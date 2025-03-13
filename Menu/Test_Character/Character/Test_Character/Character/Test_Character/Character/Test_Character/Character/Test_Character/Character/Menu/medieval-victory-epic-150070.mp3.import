@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c1hbihrsc7pkg"
-path="res://.godot/imported/medieval-victory-epic-150070.mp3-d55ddfb5860457110f4546a6d29c012b.mp3str"
+path="res://.godot/imported/medieval-victory-epic-150070.mp3-1b83ab9c6fc627d0038bdec8396a9396.mp3str"
 
 [deps]
 
-source_file="res://Menu/medieval-victory-epic-150070.mp3"
-dest_files=["res://.godot/imported/medieval-victory-epic-150070.mp3-d55ddfb5860457110f4546a6d29c012b.mp3str"]
+source_file="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/medieval-victory-epic-150070.mp3"
+dest_files=["res://.godot/imported/medieval-victory-epic-150070.mp3-1b83ab9c6fc627d0038bdec8396a9396.mp3str"]
 
 [params]
 

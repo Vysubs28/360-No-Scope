@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://LevelMenu/NextLevel.gd" id="1_0tvwn"]
 [ext_resource type="AudioStream" uid="uid://ms67ekleafmo" path="res://Assets/Rockstar Studios/Music Asset For Medieval Theme/Game Background Music.mp3" id="2_1sqsa"]
-[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Test_Character/Character/Test_Character/Character/LevelMenu/LevelPic.jpg" id="2_s6icy"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="3_rgc6x"]
+[ext_resource type="Texture2D" uid="uid://cnvb2fs42ujhx" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/LevelMenu/LevelPic.jpg" id="2_s6icy"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="3_rgc6x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qpow"]
 texture = ExtResource("2_s6icy")

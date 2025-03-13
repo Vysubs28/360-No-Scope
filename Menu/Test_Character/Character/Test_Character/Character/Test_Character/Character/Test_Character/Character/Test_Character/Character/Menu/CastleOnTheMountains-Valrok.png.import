@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s4qq4dllsudf"
-path="res://.godot/imported/CastleOnTheMountains-Valrok.png-da3f4ed24eb5df5a7e6cd66787f46dc3.ctex"
+path="res://.godot/imported/CastleOnTheMountains-Valrok.png-441ee97c8fd4297ed2db8185c4a53c9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Menu/CastleOnTheMountains-Valrok.png"
-dest_files=["res://.godot/imported/CastleOnTheMountains-Valrok.png-da3f4ed24eb5df5a7e6cd66787f46dc3.ctex"]
+source_file="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/CastleOnTheMountains-Valrok.png"
+dest_files=["res://.godot/imported/CastleOnTheMountains-Valrok.png-441ee97c8fd4297ed2db8185c4a53c9f.ctex"]
 
 [params]
 
