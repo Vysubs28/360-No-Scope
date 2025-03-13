@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt8jl28e74qhs"]
+
+[ext_resource type="Script" path="res://Intro CutScene/cut_scene.gd" id="1_bkb1n"]
+[ext_resource type="VideoStream" path="res://Intro CutScene/intro_cutscene.ogv" id="1_kotta"]
+
+[node name="CutScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bkb1n")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 720.0
+offset_bottom = 5.56994e+07
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 1e-05)
+stream = ExtResource("1_kotta")
+volume_db = 4.95
+autoplay = true
+expand = true
+
+[node name="Skip" type="Button" parent="."]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 508.0
+offset_right = 685.0
+offset_bottom = 539.0
+text = "Skip"
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="pressed" from="Skip" to="." method="_on_skip_pressed"]
