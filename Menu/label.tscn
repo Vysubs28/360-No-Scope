@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dlok18e8q0n0y"]
 
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Menu/MedievalSharp-Bold.ttf" id="1_6dhyn"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="1_6dhyn"]
 
 [node name="Label" type="Label"]
 offset_right = 40.0
