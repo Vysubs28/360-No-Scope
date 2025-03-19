@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://ccqjn5b0127m5"]
 
 [ext_resource type="Script" path="res://Menu/victory_menu.gd" id="1_mbcq8"]
-[ext_resource type="AudioStream" uid="uid://bn8qbqdic2ixr" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/victory.mp3" id="2_usf3o"]
-[ext_resource type="Texture2D" uid="uid://d35ye8ve0q0ii" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/victory.jpg" id="3_0ug82"]
-[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Test_Character/Character/Menu/MedievalSharp-Bold.ttf" id="4_tgwuw"]
+[ext_resource type="AudioStream" uid="uid://bn8qbqdic2ixr" path="res://Menu/victory.mp3" id="2_usf3o"]
+[ext_resource type="Texture2D" uid="uid://d35ye8ve0q0ii" path="res://Menu/victory.jpg" id="3_0ug82"]
+[ext_resource type="FontFile" uid="uid://bf3ftd102gqik" path="res://Menu/MedievalSharp-Bold.ttf" id="4_tgwuw"]
 [ext_resource type="Script" path="res://Menu/Label2.gd" id="5_2lo30"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnta0"]
