@@ -91,7 +91,7 @@ animations = [{
 size = Vector2(48, 66.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3ibd"]
-size = Vector2(25, 39)
+size = Vector2(25, 33)
 
 [node name="Enemy1" type="CharacterBody2D" groups=["enemies"]]
 collision_layer = 4
@@ -102,11 +102,13 @@ script = ExtResource("1_nv106")
 position = Vector2(12, -22)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_icw0u")
-animation = &"death"
+animation = &"idle"
 autoplay = "idle"
+frame = 2
+frame_progress = 0.0693465
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12, -23.125)
+position = Vector2(15, -10)
 shape = SubResource("RectangleShape2D_3c0cc")
 
 [node name="Hitbox" type="Area2D" parent="."]
@@ -115,7 +117,7 @@ collision_mask = 18
 script = ExtResource("3_g6owd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(15, -13)
+position = Vector2(15, -9)
 scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_e3ibd")
 
