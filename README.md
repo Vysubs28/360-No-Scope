@@ -1,6 +1,6 @@
 # 360 No Scope
 
-**360 No Scope** is a dynamic first-person shooter game developed using the Godot Engine. This game challenges players to master precision and timing by performing impressive 360-degree no-scope shots. Designed for fast-paced action and skillful gameplay, *360 No Scope* offers an engaging experience that tests your reflexes in a unique and exciting way.
+**360 No Scope** is a dynamic 2D shooter game developed using the Godot Engine. This game challenges players to master precision and timing by performing impressive 360-degree no-scope shots. Designed for fast-paced action and skillful gameplay, *360 No Scope* offers an engaging experience that tests your reflexes in a unique and exciting way.
 
 ---
 
