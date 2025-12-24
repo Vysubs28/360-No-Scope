@@ -46,10 +46,5 @@ Contributions are welcome! If you find any issues or have ideas for enhancements
 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute the code with proper attribution.
 
-Contact
-Created and maintained by Vyaas Subramanian. For inquiries, collaboration, or feedback:
-
-GitHub: https://github.com/Vysubs28
-
-Email: vsubs28@gmail.com
+Developed By: Vyass, Ratna, Shuja, Zac
 
